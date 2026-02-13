@@ -14,7 +14,7 @@ Marketing site and content hub for Accounts Slayable, a digital financial planni
 - **Styling:** Tailwind CSS v4 via `@tailwindcss/postcss` + `@tailwindcss/typography` — theme in `src/app/globals.css` using `@theme` block
 - **Content:** MDX blog pipeline — `gray-matter` for frontmatter, `next-mdx-remote/rsc` for server-side rendering
 - **Email:** Kit (ConvertKit) v3 API via server action (`src/lib/subscribe.ts`), credentials in `.env.local`
-- **Linting:** ESLint 10 flat config with `typescript-eslint` + `@next/eslint-plugin-next`
+- **Linting:** ESLint 9 flat config with `typescript-eslint` + `@next/eslint-plugin-next`
 - **Fonts:** Montserrat (headlines), Open Sans (body) via `next/font/google`
 - **Output:** Standalone (`next.config.ts`) — Docker/self-host ready
 - **Path alias:** `@/*` maps to `./src/*`

@@ -4,6 +4,27 @@ All notable changes to this project are documented here. This log tracks progres
 
 ---
 
+## 2026-02-13 — Session 4: Kit Stabilization & Repo Cleanup
+
+### Added
+- `npm run test:kit` script for faster local Kit integration diagnostics
+- `KIT_DEBUG_TOKEN` support for safely gating `/api/kit-status` in production
+
+### Updated
+- `EmailSignup` UX now distinguishes active subscriptions from pending confirmation and prompts users to confirm inbox email when needed
+- `subscribe.ts` now normalizes/validates email input, validates numeric `KIT_FORM_ID`, and returns clearer Kit-specific errors for misconfiguration
+- `/api/kit-status` now performs a live Kit forms check and reports whether the configured form exists for the configured API key
+- `CLAUDE.md` linting note corrected to ESLint 9
+
+### Removed
+- `CODEBASE_ANALYSIS.md` and `Accounts Slayable Website Plan.md` from repository root to keep docs focused on active project context files
+
+### Fixed
+- Production Kit failures caused by mismatched environment variables (`KIT_FORM_ID` set incorrectly) were diagnosed and resolved
+- Misleading "success" messaging for unconfirmed Kit signups (inactive subscriptions) was replaced with actionable confirmation guidance
+
+---
+
 ## 2026-02-13 — Session 3: Core Pages & Deployment Fixes
 
 ### Added
