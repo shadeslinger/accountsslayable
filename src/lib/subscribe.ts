@@ -14,7 +14,7 @@ export async function subscribe(email: string): Promise<{ ok: boolean; error?: s
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${apiKey}`,
+        "X-Kit-Api-Key": apiKey,
       },
       body: JSON.stringify({ email_address: email }),
     });
