@@ -9,21 +9,22 @@ export async function subscribe(email: string): Promise<{ ok: boolean; error?: s
   }
 
   try {
-    const res = await fetch(
-      `https://api.convertkit.com/v3/forms/${formId}/subscribe`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ api_key: apiKey, email }),
-      }
-    );
+    const url = `https://api.convertkit.com/v3/forms/${formId}/subscribe`;
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ api_key: apiKey, email }),
+    });
 
     if (!res.ok) {
-      return { ok: false, error: "Something went wrong. Please try again." };
+      const body = await res.text();
+      console.error(`Kit API error: ${res.status} ${res.statusText}`, body);
+      return { ok: false, error: `Signup failed (${res.status}). Please try again.` };
     }
 
     return { ok: true };
-  } catch {
-    return { ok: false, error: "Something went wrong. Please try again." };
+  } catch (err) {
+    console.error("Kit API fetch error:", err);
+    return { ok: false, error: "Could not reach the signup service. Please try again." };
   }
 }
