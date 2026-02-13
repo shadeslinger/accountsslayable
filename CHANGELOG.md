@@ -4,7 +4,7 @@ All notable changes to this project are documented here. This log tracks progres
 
 ---
 
-## 2026-02-13 — Session 3: Core Pages
+## 2026-02-13 — Session 3: Core Pages & Deployment Fixes
 
 ### Added
 - `/shop` — Product catalog grid with "coming soon" placeholder for future templates
@@ -17,6 +17,15 @@ All notable changes to this project are documented here. This log tracks progres
 - Footer: Added Shop, About, Start Here, Contact to Quick Links
 - `sitemap.ts` — All new pages added with appropriate priorities
 - `CLAUDE.md` — Updated project structure and placeholders sections
+
+### Fixed
+- ESLint downgraded from 10 to 9.x — `typescript-eslint` peer dependency conflict was failing Vercel builds
+- Added `KIT_FORM_ID` and `KIT_API_KEY` to Vercel environment variables — email signup was returning "not configured" on production because env vars only existed in local `.env.local`
+
+### Deployment
+- DNS configured and pointing to Vercel
+- Site live at accountsslayable.com
+- Vercel auto-deploys from `main` branch
 
 ---
 
