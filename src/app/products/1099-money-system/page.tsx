@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "The 1099 Money System",
   description:
     "A complete Google Sheets template pack for freelancers and 1099 workers. Track income, set aside taxes, manage invoices, and finally know if you're profitable.",
+  openGraph: {
+    title: "The 1099 Money System — $29 One-Time",
+    description:
+      "Everything a freelancer needs to track income, set aside taxes, manage invoices, and stop wondering if you're profitable. Google Sheets template pack — buy once, own forever.",
+    type: "website",
+    url: "https://accountsslayable.com/products/1099-money-system",
+  },
+  twitter: {
+    card: "summary",
+    title: "The 1099 Money System — $29 One-Time",
+    description:
+      "Everything a freelancer needs to track income, set aside taxes, manage invoices. Google Sheets template pack — buy once, own forever.",
+  },
 };
 
 const features = [
@@ -91,7 +104,7 @@ export default function ProductPage() {
           <p className="text-sage font-semibold mb-3 uppercase tracking-wide text-sm">
             Google Sheets Template Pack
           </p>
-          <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl sm:text-5xl text-charcoal mb-4">
+          <h1 className="font-heading font-bold text-4xl sm:text-5xl text-charcoal mb-4">
             The 1099 Money System
           </h1>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto mb-8">
@@ -121,7 +134,7 @@ export default function ProductPage() {
       {/* What's included */}
       <section className="py-16 sm:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-3xl text-center mb-12 text-charcoal">
+          <h2 className="font-heading font-bold text-3xl text-center mb-12 text-charcoal">
             What&apos;s inside
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -130,7 +143,7 @@ export default function ProductPage() {
                 key={feature.name}
                 className="bg-white rounded-xl p-6 shadow-sm border border-cream-dark"
               >
-                <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-lg mb-2 text-charcoal">
+                <h3 className="font-heading font-semibold text-lg mb-2 text-charcoal">
                   {feature.name}
                 </h3>
                 <p className="text-charcoal-light">{feature.description}</p>
@@ -143,7 +156,7 @@ export default function ProductPage() {
       {/* Comparison / value anchor */}
       <section className="py-16 sm:py-20 bg-sage/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-3xl mb-6 text-charcoal">
+          <h2 className="font-heading font-bold text-3xl mb-6 text-charcoal">
             Less than one month of a budgeting app
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
@@ -181,7 +194,7 @@ export default function ProductPage() {
       {/* FAQ */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-3xl text-center mb-12 text-charcoal">
+          <h2 className="font-heading font-bold text-3xl text-center mb-12 text-charcoal">
             Questions? We got you.
           </h2>
           <div className="space-y-4">
@@ -200,6 +213,18 @@ export default function ProductPage() {
               </details>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Legal disclaimer */}
+      <section className="py-8">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs text-charcoal-light/70 text-center">
+            For informational purposes only. Not financial, tax, or legal advice.
+            These templates are organizational tools with educational context. For advice
+            specific to your situation, consult a qualified professional. Google Sheets
+            is a trademark of Google LLC.
+          </p>
         </div>
       </section>
 

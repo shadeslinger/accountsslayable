@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-lg mb-2">
+            <h3 className="font-heading font-bold text-lg mb-2">
               Accounts Slayable
             </h3>
             <p className="text-cream-dark text-sm">
@@ -17,7 +17,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="font-[family-name:var(--font-montserrat)] font-semibold mb-3">
+            <h4 className="font-heading font-semibold mb-3">
               Quick Links
             </h4>
             <ul className="space-y-2 text-sm">
@@ -74,7 +74,7 @@ export default function Footer() {
 
           {/* Social placeholder */}
           <div>
-            <h4 className="font-[family-name:var(--font-montserrat)] font-semibold mb-3">
+            <h4 className="font-heading font-semibold mb-3">
               Follow Along
             </h4>
             <ul className="space-y-2 text-sm text-cream-dark">

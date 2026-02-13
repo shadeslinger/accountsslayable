@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="bg-gradient-to-b from-sage/10 to-cream py-20 sm:py-28">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl sm:text-5xl lg:text-6xl text-charcoal leading-tight mb-6">
+        <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-charcoal leading-tight mb-6">
           Your freelance finances,{" "}
           <span className="text-sage">finally under control</span>
         </h1>

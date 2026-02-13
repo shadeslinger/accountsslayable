@@ -3,6 +3,20 @@ import { getAllPosts } from "@/lib/blog";
 import BlogPostCard from "@/components/BlogPostCard";
 import EmailSignup from "@/components/EmailSignup";
 
+const blogJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Blog — Accounts Slayable",
+  description:
+    "Financial tips, spreadsheet tricks, and real talk for freelancers and 1099 workers.",
+  url: "https://accountsslayable.com/blog",
+  publisher: {
+    "@type": "Organization",
+    name: "Accounts Slayable",
+    url: "https://accountsslayable.com",
+  },
+};
+
 export const metadata: Metadata = {
   title: "Blog",
   description:
@@ -14,7 +28,11 @@ export default function BlogIndex() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl mb-4 text-charcoal">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+      />
+      <h1 className="font-heading font-bold text-4xl mb-4 text-charcoal">
         Blog
       </h1>
       <p className="text-charcoal-light text-lg mb-12">

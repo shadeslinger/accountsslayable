@@ -4,13 +4,46 @@ type SubscribeResult =
   | { ok: true; state: "active" | "inactive" }
   | { ok: false; error: string };
 
-export async function subscribe(email: string): Promise<SubscribeResult> {
+// Basic email format validation
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// Simple in-memory rate limiter (per server instance)
+const rateLimit = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 60_000; // 1 minute
+
+function isRateLimited(key: string): boolean {
+  const now = Date.now();
+  const entry = rateLimit.get(key);
+  if (!entry || now > entry.resetAt) {
+    rateLimit.set(key, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return false;
+  }
+  entry.count++;
+  return entry.count > RATE_LIMIT_MAX;
+}
+
+export async function subscribe(email: string, honeypot?: string): Promise<SubscribeResult> {
+  // Honeypot field — bots fill this in, real users don't see it
+  if (honeypot) {
+    // Silently succeed to not tip off bots
+    return { ok: true, state: "active" };
+  }
+
   const formId = process.env.KIT_FORM_ID;
   const apiKey = process.env.KIT_API_KEY;
-  const normalizedEmail = email.trim();
+  const normalizedEmail = email.trim().toLowerCase();
 
   if (!normalizedEmail) {
     return { ok: false, error: "Please enter a valid email address." };
+  }
+
+  if (!EMAIL_RE.test(normalizedEmail)) {
+    return { ok: false, error: "Please enter a valid email address." };
+  }
+
+  if (isRateLimited(normalizedEmail)) {
+    return { ok: false, error: "Too many attempts. Please try again in a minute." };
   }
 
   if (!formId || !apiKey) {

@@ -1,5 +1,39 @@
+import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import EmailSignup from "@/components/EmailSignup";
+
+export const metadata: Metadata = {
+  title: "Accounts Slayable — Financial Tools for Freelancers",
+  description:
+    "Google Sheets templates and financial tools for freelancers, consultants, and 1099 workers. Track income, set aside taxes, and stop guessing with your money.",
+  openGraph: {
+    title: "Accounts Slayable — Financial Tools for Freelancers",
+    description:
+      "Google Sheets templates built for 1099 workers. Track income, set aside taxes, manage invoices — buy once, own forever.",
+    type: "website",
+    url: "https://accountsslayable.com",
+  },
+  twitter: {
+    card: "summary",
+    title: "Accounts Slayable — Financial Tools for Freelancers",
+    description:
+      "Google Sheets templates built for 1099 workers. Track income, set aside taxes, manage invoices — buy once, own forever.",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Accounts Slayable",
+  url: "https://accountsslayable.com",
+  description:
+    "Google Sheets templates and financial tools for freelancers, consultants, and 1099 workers.",
+  publisher: {
+    "@type": "Organization",
+    name: "Accounts Slayable",
+    url: "https://accountsslayable.com",
+  },
+};
 
 const features = [
   {
@@ -32,12 +66,16 @@ const painPoints = [
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Hero />
 
       {/* Value propositions */}
       <section className="py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-3xl text-center mb-12 text-charcoal">
+          <h2 className="font-heading font-bold text-3xl text-center mb-12 text-charcoal">
             Why freelancers love these templates
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -47,7 +85,7 @@ export default function Home() {
                 className="bg-white rounded-2xl p-6 shadow-sm border border-cream-dark text-center"
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-lg mb-2">
+                <h3 className="font-heading font-semibold text-lg mb-2">
                   {feature.title}
                 </h3>
                 <p className="text-charcoal-light">{feature.description}</p>
@@ -60,7 +98,7 @@ export default function Home() {
       {/* Pain points / "Is this you?" */}
       <section className="py-16 sm:py-20 bg-sage/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-3xl text-center mb-4 text-charcoal">
+          <h2 className="font-heading font-bold text-3xl text-center mb-4 text-charcoal">
             Sound familiar?
           </h2>
           <p className="text-center text-charcoal-light mb-8">

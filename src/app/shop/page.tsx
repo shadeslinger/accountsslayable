@@ -2,6 +2,26 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
 
+const shopJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Templates for Freelancers",
+  description:
+    "Google Sheets templates for freelancers and 1099 workers. Track income, manage taxes, and get your finances organized.",
+  url: "https://accountsslayable.com/shop",
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        url: "https://accountsslayable.com/products/1099-money-system",
+        name: "The 1099 Money System",
+      },
+    ],
+  },
+};
+
 export const metadata: Metadata = {
   title: "Shop",
   description:
@@ -22,10 +42,14 @@ const products = [
 export default function ShopPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(shopJsonLd) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-b from-sage/10 to-cream py-16 sm:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl sm:text-5xl text-charcoal mb-4">
+          <h1 className="font-heading font-bold text-4xl sm:text-5xl text-charcoal mb-4">
             Templates that do the hard part
           </h1>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
@@ -50,11 +74,11 @@ export default function ShopPage() {
                     {product.tag}
                   </span>
                 )}
-                <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl text-charcoal mb-2 group-hover:text-sage-dark transition-colors">
+                <h2 className="font-heading font-bold text-xl text-charcoal mb-2 group-hover:text-sage-dark transition-colors">
                   {product.name}
                 </h2>
                 <p className="text-charcoal-light mb-4">{product.description}</p>
-                <p className="font-[family-name:var(--font-montserrat)] font-bold text-2xl text-charcoal">
+                <p className="font-heading font-bold text-2xl text-charcoal">
                   {product.price}{" "}
                   <span className="text-sm font-normal text-charcoal-light">
                     one-time

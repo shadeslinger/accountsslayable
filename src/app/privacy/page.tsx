@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl sm:text-5xl text-charcoal mb-4">
+      <h1 className="font-heading font-bold text-4xl sm:text-5xl text-charcoal mb-4">
         Privacy Policy
       </h1>
       <p className="text-charcoal-light mb-10">
         Last updated: February 13, 2026
       </p>
 
-      <div className="prose prose-lg max-w-none prose-headings:font-[family-name:var(--font-montserrat)] prose-headings:text-charcoal prose-p:text-charcoal-light prose-a:text-sage prose-a:no-underline hover:prose-a:underline prose-strong:text-charcoal prose-li:text-charcoal-light">
+      <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-charcoal prose-p:text-charcoal-light prose-a:text-sage prose-a:no-underline hover:prose-a:underline prose-strong:text-charcoal prose-li:text-charcoal-light">
         <h2>Who We Are</h2>
         <p>
           Accounts Slayable is a financial tools brand operated by Up &amp; Adam

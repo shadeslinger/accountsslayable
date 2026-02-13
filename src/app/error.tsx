@@ -8,7 +8,7 @@ export default function Error({
 }) {
   return (
     <div className="max-w-2xl mx-auto px-4 py-24 text-center">
-      <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl text-charcoal mb-4">
+      <h1 className="font-heading font-bold text-4xl text-charcoal mb-4">
         Well, that wasn&apos;t in the budget
       </h1>
       <p className="text-charcoal-light mb-8">

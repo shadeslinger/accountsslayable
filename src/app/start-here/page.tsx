@@ -45,7 +45,7 @@ export default function StartHerePage() {
       {/* Hero */}
       <section className="bg-gradient-to-b from-sage/10 to-cream py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl sm:text-5xl text-charcoal mb-4">
+          <h1 className="font-heading font-bold text-4xl sm:text-5xl text-charcoal mb-4">
             New here? Welcome.
           </h1>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
@@ -58,19 +58,19 @@ export default function StartHerePage() {
       {/* Steps */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-12">
+          <ol className="space-y-12 list-none pl-0">
             {steps.map((step, i) => (
-              <div key={step.number} className="flex gap-6">
+              <li key={step.number} className="flex gap-6">
                 {/* Number */}
                 <div className="flex-shrink-0">
-                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sage/10 text-sage font-[family-name:var(--font-montserrat)] font-bold text-lg">
+                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-sage/10 text-sage font-heading font-bold text-lg" aria-hidden="true">
                     {step.number}
                   </span>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-xl text-charcoal mb-2">
+                  <h2 className="font-heading font-bold text-xl text-charcoal mb-2">
                     {step.title}
                   </h2>
                   <p className="text-charcoal-light mb-4">
@@ -103,9 +103,9 @@ export default function StartHerePage() {
                     </p>
                   )}
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
     </>

@@ -25,22 +25,24 @@ export default function EmailSignup({
     if (status === "submitting") return;
 
     const form = e.currentTarget;
-    const email = new FormData(form).get("email_address") as string;
+    const formData = new FormData(form);
+    const email = formData.get("email_address") as string;
+    const honeypot = formData.get("website_url") as string;
 
     setStatus("submitting");
     setErrorMessage("");
 
-    const result = await subscribe(email);
+    const result = await subscribe(email, honeypot || undefined);
 
-    if (result.ok && result.state === "active") {
-      setStatus("success");
-      form.reset();
-    } else if (result.ok && result.state === "inactive") {
+    if (!result.ok) {
+      setStatus("error");
+      setErrorMessage(result.error ?? "Something went wrong. Please try again.");
+    } else if (result.state === "inactive") {
       setStatus("pending_confirmation");
       form.reset();
     } else {
-      setStatus("error");
-      setErrorMessage(result.error ?? "Something went wrong. Please try again.");
+      setStatus("success");
+      form.reset();
     }
   }
 
@@ -51,7 +53,7 @@ export default function EmailSignup({
         role="status"
         aria-live="polite"
       >
-        <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2 text-charcoal">
+        <h3 className="font-heading font-bold text-xl mb-2 text-charcoal">
           You&apos;re in!
         </h3>
         <p className="text-charcoal-light">
@@ -68,7 +70,7 @@ export default function EmailSignup({
         role="status"
         aria-live="polite"
       >
-        <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2 text-charcoal">
+        <h3 className="font-heading font-bold text-xl mb-2 text-charcoal">
           Almost done
         </h3>
         <p className="text-charcoal-light">
@@ -83,7 +85,7 @@ export default function EmailSignup({
     <div
       className={`bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-cream-dark ${className}`}
     >
-      <h3 className="font-[family-name:var(--font-montserrat)] font-bold text-xl mb-2 text-charcoal">
+      <h3 className="font-heading font-bold text-xl mb-2 text-charcoal">
         {heading}
       </h3>
       <p className="text-charcoal-light mb-4">{subheading}</p>
@@ -95,6 +97,15 @@ export default function EmailSignup({
         <label htmlFor={inputId} className="sr-only">
           Email address
         </label>
+        {/* Honeypot field — hidden from real users, bots fill it in */}
+        <input
+          type="text"
+          name="website_url"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          className="absolute opacity-0 pointer-events-none h-0 w-0 overflow-hidden"
+        />
         <input
           id={inputId}
           type="email"

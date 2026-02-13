@@ -12,6 +12,8 @@
   --color-coral-dark: #e55555;
   --color-charcoal: #2D2D2D;
   --color-charcoal-light: #4a4a4a;
+
+  --font-family-heading: var(--font-montserrat);
 }
 
 html {

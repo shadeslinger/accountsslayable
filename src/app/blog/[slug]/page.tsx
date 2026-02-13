@@ -25,6 +25,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       type: "article",
       publishedTime: post.date,
+      authors: ["Accounts Slayable"],
+      tags: post.tags,
+    },
+    twitter: {
+      card: "summary",
+      title: post.title,
+      description: post.description,
     },
   };
 }
@@ -75,10 +82,10 @@ export default async function BlogPostPage({ params }: Props) {
             </span>
           ))}
         </div>
-        <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl sm:text-5xl text-charcoal mb-4">
+        <h1 className="font-heading font-bold text-4xl sm:text-5xl text-charcoal mb-4">
           {post.title}
         </h1>
-        <time className="text-charcoal-light">
+        <time dateTime={post.date} className="text-charcoal-light">
           {new Date(post.date).toLocaleDateString("en-US", {
             year: "numeric",
             month: "long",
@@ -87,7 +94,7 @@ export default async function BlogPostPage({ params }: Props) {
         </time>
       </header>
 
-      <div className="prose prose-lg max-w-none prose-headings:font-[family-name:var(--font-montserrat)] prose-headings:text-charcoal prose-p:text-charcoal-light prose-a:text-sage prose-a:no-underline hover:prose-a:underline prose-strong:text-charcoal">
+      <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-charcoal prose-p:text-charcoal-light prose-a:text-sage prose-a:no-underline hover:prose-a:underline prose-strong:text-charcoal">
         <MDXRemote source={post.content} />
       </div>
 

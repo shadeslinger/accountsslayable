@@ -13,7 +13,7 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="bg-gradient-to-b from-sage/10 to-cream py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl sm:text-5xl text-charcoal mb-4">
+          <h1 className="font-heading font-bold text-4xl sm:text-5xl text-charcoal mb-4">
             Get in touch
           </h1>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
@@ -29,7 +29,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Email */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-cream-dark">
-              <h2 className="font-[family-name:var(--font-montserrat)] font-semibold text-lg text-charcoal mb-2">
+              <h2 className="font-heading font-semibold text-lg text-charcoal mb-2">
                 Email
               </h2>
               <p className="text-charcoal-light mb-4">
@@ -46,7 +46,7 @@ export default function ContactPage() {
 
             {/* Common questions */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-cream-dark">
-              <h2 className="font-[family-name:var(--font-montserrat)] font-semibold text-lg text-charcoal mb-2">
+              <h2 className="font-heading font-semibold text-lg text-charcoal mb-2">
                 Template support
               </h2>
               <p className="text-charcoal-light mb-4">

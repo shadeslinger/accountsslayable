@@ -2,6 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
 
+const aboutJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: "About Accounts Slayable",
+  description:
+    "The story behind Accounts Slayable — why we build Google Sheets templates for freelancers and 1099 workers.",
+  url: "https://accountsslayable.com/about",
+  mainEntity: {
+    "@type": "Organization",
+    name: "Accounts Slayable",
+    url: "https://accountsslayable.com",
+    description:
+      "Financial tools that respect your intelligence and your time.",
+  },
+};
+
 export const metadata: Metadata = {
   title: "About",
   description:
@@ -11,10 +27,14 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-b from-sage/10 to-cream py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-[family-name:var(--font-montserrat)] font-bold text-4xl sm:text-5xl text-charcoal mb-4">
+          <h1 className="font-heading font-bold text-4xl sm:text-5xl text-charcoal mb-4">
             About Accounts Slayable
           </h1>
           <p className="text-lg text-charcoal-light max-w-2xl mx-auto">
@@ -26,7 +46,7 @@ export default function AboutPage() {
       {/* Founder story */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-3xl text-charcoal mb-6">
+          <h2 className="font-heading font-bold text-3xl text-charcoal mb-6">
             The short version
           </h2>
           <div className="space-y-4 text-charcoal-light text-lg">
@@ -55,7 +75,7 @@ export default function AboutPage() {
       {/* What we believe */}
       <section className="py-16 sm:py-20 bg-sage/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-3xl text-charcoal mb-8">
+          <h2 className="font-heading font-bold text-3xl text-charcoal mb-8">
             What we believe
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -81,7 +101,7 @@ export default function AboutPage() {
                 key={item.title}
                 className="bg-white rounded-xl p-6 shadow-sm border border-cream-dark"
               >
-                <h3 className="font-[family-name:var(--font-montserrat)] font-semibold text-lg text-charcoal mb-2">
+                <h3 className="font-heading font-semibold text-lg text-charcoal mb-2">
                   {item.title}
                 </h3>
                 <p className="text-charcoal-light">{item.body}</p>
@@ -94,7 +114,7 @@ export default function AboutPage() {
       {/* CTA */}
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-[family-name:var(--font-montserrat)] font-bold text-3xl text-charcoal mb-4">
+          <h2 className="font-heading font-bold text-3xl text-charcoal mb-4">
             Ready to get started?
           </h2>
           <p className="text-lg text-charcoal-light mb-8">
