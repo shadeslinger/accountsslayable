@@ -9,11 +9,14 @@ export async function subscribe(email: string): Promise<{ ok: boolean; error?: s
   }
 
   try {
-    const url = `https://api.convertkit.com/v3/forms/${formId}/subscribe`;
+    const url = `https://api.kit.com/v4/forms/${formId}/subscribers`;
     const res = await fetch(url, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ api_key: apiKey, email }),
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({ email_address: email }),
     });
 
     if (!res.ok) {
