@@ -4,6 +4,22 @@ All notable changes to this project are documented here. This log tracks progres
 
 ---
 
+## 2026-02-13 — Session 3: Core Pages
+
+### Added
+- `/shop` — Product catalog grid with "coming soon" placeholder for future templates
+- `/about` — Founder story page with placeholder copy (brackets for Adam to fill in), values section
+- `/start-here` — New visitor onboarding guide with numbered steps and inline email signup
+- `/contact` — Contact info page with email and template support links
+
+### Updated
+- Header nav: Home | Shop | Blog | About | Start Here (replaced direct product link)
+- Footer: Added Shop, About, Start Here, Contact to Quick Links
+- `sitemap.ts` — All new pages added with appropriate priorities
+- `CLAUDE.md` — Updated project structure and placeholders sections
+
+---
+
 ## 2026-02-13 — Session 2: Tidying & Tooling
 
 ### Added

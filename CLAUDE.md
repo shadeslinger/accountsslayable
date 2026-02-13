@@ -36,13 +36,21 @@ src/
     sitemap.ts                        # Dynamic sitemap (includes blog posts)
     error.tsx                         # Error boundary (branded)
     not-found.tsx                     # 404 page (branded)
+    about/
+      page.tsx                        # Founder story (placeholder copy)
     blog/
       page.tsx                        # Blog index
       [slug]/page.tsx                 # Dynamic blog post (MDX rendering)
+    contact/
+      page.tsx                        # Contact info
     privacy/
       page.tsx                        # Privacy policy
     products/
       1099-money-system/page.tsx      # Product sales page with JSON-LD
+    shop/
+      page.tsx                        # Product catalog grid
+    start-here/
+      page.tsx                        # New visitor onboarding guide
   components/
     Header.tsx                        # Sticky nav with mobile hamburger (client component)
     Footer.tsx                        # Footer with disclaimers
@@ -67,6 +75,7 @@ content/
 ## Known Placeholders (Not Yet Wired Up)
 These are intentional TODOs, not bugs:
 - `src/app/products/1099-money-system/page.tsx` — 3x `href="#"` for Gumroad/Etsy purchase links
+- `src/app/about/page.tsx` — Founder story has `[bracket]` placeholder copy for Adam to fill in
 - `src/components/Footer.tsx` — Social media links marked "coming soon"
 - No analytics (GA4) or event tracking installed yet
 

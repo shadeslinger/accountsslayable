@@ -5,8 +5,10 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: "/shop", label: "Shop" },
   { href: "/blog", label: "Blog" },
-  { href: "/products/1099-money-system", label: "Products" },
+  { href: "/about", label: "About" },
+  { href: "/start-here", label: "Start Here" },
 ];
 
 export default function Header() {

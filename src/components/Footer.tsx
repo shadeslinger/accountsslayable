@@ -23,6 +23,14 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
+                  href="/shop"
+                  className="text-cream-dark hover:text-white transition-colors"
+                >
+                  Shop
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/blog"
                   className="text-cream-dark hover:text-white transition-colors"
                 >
@@ -31,10 +39,26 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/products/1099-money-system"
+                  href="/about"
                   className="text-cream-dark hover:text-white transition-colors"
                 >
-                  The 1099 Money System
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/start-here"
+                  className="text-cream-dark hover:text-white transition-colors"
+                >
+                  Start Here
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-cream-dark hover:text-white transition-colors"
+                >
+                  Contact
                 </Link>
               </li>
               <li>
