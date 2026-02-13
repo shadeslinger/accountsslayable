@@ -29,10 +29,15 @@ export default function EmailSignup({
         method="post"
         className="flex flex-col sm:flex-row gap-3"
       >
+        <label htmlFor="email-signup" className="sr-only">
+          Email address
+        </label>
         <input
+          id="email-signup"
           type="email"
           name="email_address"
           placeholder="you@example.com"
+          aria-label="Email address"
           required
           className="flex-1 px-4 py-3 rounded-lg border border-cream-dark bg-cream text-charcoal placeholder:text-charcoal-light focus:outline-none focus:ring-2 focus:ring-sage focus:border-sage"
         />

@@ -35,9 +35,36 @@ export default async function BlogPostPage({ params }: Props) {
 
   if (!post) notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    author: {
+      "@type": "Organization",
+      name: "Accounts Slayable",
+      url: "https://accountsslayable.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Accounts Slayable",
+      url: "https://accountsslayable.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://accountsslayable.com/blog/${post.slug}`,
+    },
+  };
+
   return (
-    <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <header className="mb-10">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <header className="mb-10">
         <div className="flex flex-wrap gap-2 mb-4">
           {post.tags.map((tag) => (
             <span
@@ -71,5 +98,6 @@ export default async function BlogPostPage({ params }: Props) {
         />
       </div>
     </article>
+    </>
   );
 }

@@ -16,7 +16,13 @@ export interface BlogPost {
 export function getAllPosts(): BlogPost[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
 
-  const files = fs.readdirSync(BLOG_DIR).filter((f) => f.endsWith(".mdx"));
+  let files: string[];
+  try {
+    files = fs.readdirSync(BLOG_DIR).filter((f) => f.endsWith(".mdx"));
+  } catch (err) {
+    console.error(`[blog] Failed to read directory ${BLOG_DIR}:`, err);
+    return [];
+  }
 
   const posts = files.map((filename) => {
     const slug = filename.replace(/\.mdx$/, "");
@@ -33,24 +39,41 @@ export function getPostBySlug(slug: string): BlogPost | null {
 
   if (!fs.existsSync(filePath)) return null;
 
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const { data, content } = matter(raw);
+  try {
+    const raw = fs.readFileSync(filePath, "utf-8");
+    const { data, content } = matter(raw);
 
-  return {
-    slug,
-    title: data.title || slug,
-    date: data.date || "",
-    description: data.description || "",
-    tags: data.tags || [],
-    content,
-  };
+    return {
+      slug,
+      title:
+        typeof data.title === "string" && data.title.trim()
+          ? data.title
+          : slug,
+      date:
+        typeof data.date === "string" && data.date.trim() ? data.date : "",
+      description:
+        typeof data.description === "string" ? data.description : "",
+      tags: Array.isArray(data.tags)
+        ? data.tags.filter((t): t is string => typeof t === "string")
+        : [],
+      content,
+    };
+  } catch (err) {
+    console.error(`[blog] Failed to read ${filePath}:`, err);
+    return null;
+  }
 }
 
 export function getAllSlugs(): string[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
 
-  return fs
-    .readdirSync(BLOG_DIR)
-    .filter((f) => f.endsWith(".mdx"))
-    .map((f) => f.replace(/\.mdx$/, ""));
+  try {
+    return fs
+      .readdirSync(BLOG_DIR)
+      .filter((f) => f.endsWith(".mdx"))
+      .map((f) => f.replace(/\.mdx$/, ""));
+  } catch (err) {
+    console.error(`[blog] Failed to read directory ${BLOG_DIR}:`, err);
+    return [];
+  }
 }

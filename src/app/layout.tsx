@@ -24,10 +24,25 @@ export const metadata: Metadata = {
   description:
     "Google Sheets templates and financial tools for freelancers, consultants, and 1099 workers. Slay your accounts, not your sanity.",
   metadataBase: new URL("https://accountsslayable.com"),
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "Accounts Slayable",
+    title: "Accounts Slayable — Financial Tools for Freelancers",
+    description:
+      "Google Sheets templates and financial tools for freelancers, consultants, and 1099 workers.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Accounts Slayable — Financial Tools for Freelancers",
+    description:
+      "Google Sheets templates and financial tools for freelancers, consultants, and 1099 workers.",
+  },
+  other: {
+    "theme-color": "#87A96B",
   },
 };
 

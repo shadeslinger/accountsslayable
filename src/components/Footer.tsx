@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal text-cream">
+    <footer role="contentinfo" className="bg-charcoal text-cream">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
@@ -35,6 +35,14 @@ export default function Footer() {
                   className="text-cream-dark hover:text-white transition-colors"
                 >
                   The 1099 Money System
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-cream-dark hover:text-white transition-colors"
+                >
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
