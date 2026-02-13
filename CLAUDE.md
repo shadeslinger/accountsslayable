@@ -6,13 +6,15 @@ Marketing site and content hub for Accounts Slayable, a digital financial planni
 **Owner:** Adam
 **Domain:** accountsslayable.com
 **Repo:** git@github.com:shadeslinger/accountsslayable.git
-**Status:** Pre-launch scaffold — foundation is solid, monetization/email integrations are placeholder
+**Status:** Pre-launch — foundation solid, email capture live (Kit/ConvertKit), purchase links still placeholder
 
 ## Tech Stack
 - **Framework:** Next.js 16 (App Router) with React 19
 - **Language:** TypeScript (strict mode)
-- **Styling:** Tailwind CSS v4 via `@tailwindcss/postcss` — theme defined in `src/app/globals.css` using `@theme` block
+- **Styling:** Tailwind CSS v4 via `@tailwindcss/postcss` + `@tailwindcss/typography` — theme in `src/app/globals.css` using `@theme` block
 - **Content:** MDX blog pipeline — `gray-matter` for frontmatter, `next-mdx-remote/rsc` for server-side rendering
+- **Email:** Kit (ConvertKit) v3 API via server action (`src/lib/subscribe.ts`), credentials in `.env.local`
+- **Linting:** ESLint 10 flat config with `typescript-eslint` + `@next/eslint-plugin-next`
 - **Fonts:** Montserrat (headlines), Open Sans (body) via `next/font/google`
 - **Output:** Standalone (`next.config.ts`) — Docker/self-host ready
 - **Path alias:** `@/*` maps to `./src/*`
@@ -29,22 +31,27 @@ src/
   app/
     page.tsx                          # Landing page
     layout.tsx                        # Root layout (fonts, metadata, Header/Footer)
-    globals.css                       # Tailwind v4 theme colors
+    globals.css                       # Tailwind v4 theme (@theme block + typography plugin)
     robots.ts                         # SEO robots.txt
     sitemap.ts                        # Dynamic sitemap (includes blog posts)
+    error.tsx                         # Error boundary (branded)
+    not-found.tsx                     # 404 page (branded)
     blog/
       page.tsx                        # Blog index
       [slug]/page.tsx                 # Dynamic blog post (MDX rendering)
+    privacy/
+      page.tsx                        # Privacy policy
     products/
       1099-money-system/page.tsx      # Product sales page with JSON-LD
   components/
     Header.tsx                        # Sticky nav with mobile hamburger (client component)
     Footer.tsx                        # Footer with disclaimers
     Hero.tsx                          # Landing page hero section
-    EmailSignup.tsx                   # Email capture form (client component)
+    EmailSignup.tsx                   # Email capture form → Kit API (client component)
     BlogPostCard.tsx                  # Blog post preview card
   lib/
     blog.ts                           # MDX file reader — getAllPosts(), getPostBySlug(), getAllSlugs()
+    subscribe.ts                      # Server action — Kit (ConvertKit) v3 API subscriber creation
 content/
   blog/*.mdx                         # Blog posts with YAML frontmatter (title, date, description, tags)
 ```
@@ -59,10 +66,16 @@ content/
 
 ## Known Placeholders (Not Yet Wired Up)
 These are intentional TODOs, not bugs:
-- `src/components/EmailSignup.tsx` — `CONVERTKIT_FORM_ACTION = "#"` (needs real ConvertKit form endpoint)
 - `src/app/products/1099-money-system/page.tsx` — 3x `href="#"` for Gumroad/Etsy purchase links
 - `src/components/Footer.tsx` — Social media links marked "coming soon"
 - No analytics (GA4) or event tracking installed yet
+
+## What's Working
+- Email capture via Kit (ConvertKit) API — server action in `src/lib/subscribe.ts`, credentials in `.env.local`
+- Security headers (CSP, X-Frame-Options, etc.) in `next.config.ts`
+- MDX blog pipeline with prose typography styling
+- Branded error/404 pages
+- Privacy policy page
 
 ## Conventions
 - Components use default exports
