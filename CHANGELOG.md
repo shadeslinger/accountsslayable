@@ -22,6 +22,7 @@ All notable changes to this project are documented here. This log tracks progres
 - ESLint downgraded from 10 to 9.x — `typescript-eslint` peer dependency conflict was failing Vercel builds
 - Added `KIT_FORM_ID` and `KIT_API_KEY` to Vercel environment variables — email signup was returning "not configured" on production because env vars only existed in local `.env.local`
 - Kit API v4 auth header — was using `Authorization: Bearer` (OAuth-only) instead of `X-Kit-Api-Key` header, causing 401 errors
+- Switched from Kit v4 API to Kit form submission endpoint (`app.kit.com/forms/{id}/subscriptions`) — v4 API subscriber endpoints don't work with API key auth despite docs. Form endpoint is the same one Kit's own embed JS uses, no API key needed
 
 ### Deployment
 - DNS configured and pointing to Vercel

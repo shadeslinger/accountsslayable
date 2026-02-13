@@ -80,7 +80,7 @@ These are intentional TODOs, not bugs:
 - No analytics (GA4) or event tracking installed yet
 
 ## What's Working
-- Email capture via Kit (ConvertKit) API — server action in `src/lib/subscribe.ts`, credentials in `.env.local`
+- Email capture via Kit form submission endpoint — server action in `src/lib/subscribe.ts`, only needs `KIT_FORM_ID` env var
 - Security headers (CSP, X-Frame-Options, etc.) in `next.config.ts`
 - MDX blog pipeline with prose typography styling
 - Branded error/404 pages
