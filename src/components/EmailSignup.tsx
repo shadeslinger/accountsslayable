@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useId } from "react";
+import { subscribe } from "@/lib/subscribe";
 
 interface EmailSignupProps {
   heading?: string;
@@ -29,34 +30,14 @@ export default function EmailSignup({
     setStatus("submitting");
     setErrorMessage("");
 
-    const formId = process.env.NEXT_PUBLIC_KIT_FORM_ID;
-    const apiKey = process.env.NEXT_PUBLIC_KIT_API_KEY;
+    const result = await subscribe(email);
 
-    if (!formId || !apiKey) {
-      setStatus("error");
-      setErrorMessage("Email signup is not configured yet. Check back soon!");
-      return;
-    }
-
-    try {
-      const res = await fetch(
-        `https://api.convertkit.com/v3/forms/${formId}/subscribe`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ api_key: apiKey, email }),
-        }
-      );
-
-      if (!res.ok) {
-        throw new Error("Subscription failed");
-      }
-
+    if (result.ok) {
       setStatus("success");
       form.reset();
-    } catch {
+    } else {
       setStatus("error");
-      setErrorMessage("Something went wrong. Please try again.");
+      setErrorMessage(result.error ?? "Something went wrong. Please try again.");
     }
   }
 
