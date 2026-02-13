@@ -21,6 +21,7 @@ All notable changes to this project are documented here. This log tracks progres
 ### Fixed
 - ESLint downgraded from 10 to 9.x — `typescript-eslint` peer dependency conflict was failing Vercel builds
 - Added `KIT_FORM_ID` and `KIT_API_KEY` to Vercel environment variables — email signup was returning "not configured" on production because env vars only existed in local `.env.local`
+- Kit API v4 auth header — was using `Authorization: Bearer` (OAuth-only) instead of `X-Kit-Api-Key` header, causing 401 errors
 
 ### Deployment
 - DNS configured and pointing to Vercel
