@@ -140,3 +140,51 @@ iterate on them later.
 Prompt: full prompt used
 Notes: (any tweaks, rejected variants, etc.)
 -->
+
+### 2026-04-11 — public/images/blog/credit-card-rewards-no-bs-guide.webp
+Prompt: Blog post hero illustration about credit card rewards for beginners. Central subject: a stylized credit card at a slight angle with small coins and star shapes floating above it, with a subtle upward arrow in coral pink. Mood: playful and inviting. Background: soft cream with abstract geometric accents in sage green and coral.
+Seed: 578775624 • Size: 1024x576 • Steps: 4
+
+### 2026-04-11 — public/images/pillars/personal-finance.webp
+Prompt: Pillar hero illustration for a personal finance topic called "Personal Finance". Central symbol: a small green plant with leaves growing out of a stack of gold coins, with a simple upward bar chart behind it. Background: soft cream with abstract sage and coral geometric accents. Square composition, centered.
+Seed: 1985941386 • Size: 1024x1024 • Steps: 4
+
+### 2026-04-11 — public/images/pillars/points-and-rewards.webp
+Prompt: Pillar hero illustration for a personal finance topic called "Points and Rewards". Central symbol: a stylized credit card with small star shapes and a paper airplane flying upward from it, plus a few gold coins. Background: soft cream with abstract sage and coral geometric accents. Square composition, centered.
+Seed: 561670735 • Size: 1024x1024 • Steps: 4
+
+### 2026-04-11 — public/images/pillars/freelance-and-1099.webp
+Prompt: Pillar hero illustration for a personal finance topic called "Freelance and 1099". Central symbol: a clean clipboard with invoice lines and checkmarks, a small coffee cup next to it, and a few geometric receipt shapes. Background: soft cream with abstract sage and coral geometric accents. Square composition, centered.
+Seed: 521661980 • Size: 1024x1024 • Steps: 4
+
+### 2026-04-11 — public/images/pillars/ai-and-fintech.webp
+Prompt: Pillar hero illustration for a personal finance topic called "AI and Fintech". Central symbol: a stylized laptop screen showing an abstract line chart and bar graph interface in sage and coral, with a small coral spark or lightning bolt above it. Background: soft cream with abstract geometric accents. Square composition, centered.
+Seed: 174238627 • Size: 1024x1024 • Steps: 4
+
+### 2026-04-11 — public/images/pillars/side-hustles.webp
+Prompt: Pillar hero illustration for a personal finance topic called "Side Hustles and Business". Central symbol: an isometric small shop or storefront with a small "open" flag, surrounded by small icons of tools and a box, in sage green and cream. Background: soft cream with abstract coral geometric accents. Square composition, centered.
+Seed: 457042435 • Size: 1024x1024 • Steps: 4
+
+### 2026-04-11 — public/images/pillars/money-mindset.webp
+Prompt: Pillar hero illustration for a personal finance topic called "Money Mindset". Central symbol: an abstract head silhouette made of soft rounded sage green shapes with a few small thought bubbles containing simple geometric shapes like circles and squares. No realistic face, no facial features. Background: soft cream with abstract coral geometric accents. Square composition, centered.
+Seed: 1279231003 • Size: 1024x1024 • Steps: 4
+
+### 2026-04-11 — public/images/pillars/personal-finance.webp
+Prompt: A small green plant with leaves growing out of a stack of round gold coins, with a simple minimalist upward bar chart in cream and sage green behind it. Absolutely no text, no letters, no words, no numbers. Abstract geometric shapes like circles and rounded squares in the background. Centered composition.
+Seed: 737740816 • Size: 1024x1024 • Steps: 4
+
+### 2026-04-11 — public/images/pillars/freelance-and-1099.webp
+Prompt: A clipboard with minimalist abstract horizontal lines representing a blank form, a small coffee cup with steam beside it, a stylized paper receipt curling nearby. Absolutely no text, no letters, no numbers, no words anywhere in the image. Clean flat illustration with soft shadows. Abstract sage green and coral geometric shapes in the background.
+Seed: 531239132 • Size: 1024x1024 • Steps: 4
+
+### 2026-04-11 — public/images/pillars/side-hustles.webp
+Prompt: An isometric small storefront building with a simple roof, a small round window, and a tiny flag on top. Next to it, a small toolbox or stack of packages. Colors: sage green building with cream walls, coral accents. Absolutely no text, no letters, no signs with words, no words anywhere in the image. Clean centered composition with abstract geometric shapes in the background.
+Seed: 1351635553 • Size: 1024x1024 • Steps: 4
+
+### 2026-04-11 — public/images/products/1099-money-system.webp
+Prompt: An abstract stylized illustration of interlocking spreadsheet tabs and grids floating in 3D, suggesting six connected Google Sheets templates. Clean cells, simple bar charts, a few gold coin icons, no realistic UI. Sage green and cream with coral accents. No text, no numbers, no letters, no labels anywhere. Centered composition with soft shadows and abstract geometric shapes in the background.
+Seed: 1375842341 • Size: 1024x576 • Steps: 4
+
+### 2026-04-11 — public/images/products/1099-money-system.webp
+Prompt: Abstract stacked grid panels floating at slight angles, each panel containing minimalist bar charts in coral and sage green, simple horizontal line dividers, and a few round gold coin shapes. Layered depth. Absolutely no text, no letters, no words, no labels, no window title bars, no software interface chrome. Background: cream with soft coral and sage abstract shapes. Centered editorial composition.
+Seed: 154635105 • Size: 1024x576 • Steps: 4

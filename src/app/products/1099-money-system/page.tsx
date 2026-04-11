@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import EmailSignup from "@/components/EmailSignup";
 
 const OG_IMAGE =
@@ -104,34 +105,46 @@ export default function ProductPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Product hero */}
-      <section className="bg-gradient-to-b from-sage/10 to-cream py-16 sm:py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sage font-semibold mb-3 uppercase tracking-wide text-sm">
-            Google Sheets Template Pack
-          </p>
-          <h1 className="font-heading font-bold text-4xl sm:text-5xl text-charcoal mb-4">
-            The 1099 Money System
-          </h1>
-          <p className="text-lg text-charcoal-light max-w-2xl mx-auto mb-8">
-            Everything a freelancer needs to track income, set aside taxes,
-            manage invoices, and stop wondering &ldquo;am I even
-            profitable?&rdquo; — all in one Google Sheets bundle.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
-              href="#"
-              className="px-8 py-4 bg-coral hover:bg-coral-dark text-white font-bold rounded-lg text-lg transition-colors"
-            >
-              {/* TODO: Replace # with Gumroad product URL */}
-              Buy on Gumroad — $29
-            </a>
-            <a
-              href="#"
-              className="text-charcoal-light hover:text-sage transition-colors underline"
-            >
-              {/* TODO: Replace # with Etsy listing URL */}
-              Also available on Etsy
-            </a>
+      <section className="bg-gradient-to-b from-sage/10 via-cream to-cream py-16 sm:py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <p className="text-sage-dark font-semibold mb-3 uppercase tracking-[0.15em] text-sm">
+              Google Sheets Template Pack
+            </p>
+            <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-charcoal mb-4 leading-[1.1]">
+              The 1099 Money System
+            </h1>
+            <p className="text-lg sm:text-xl text-charcoal-light max-w-2xl mx-auto mb-8">
+              Everything a freelancer needs to track income, set aside taxes,
+              manage invoices, and stop wondering &ldquo;am I even
+              profitable?&rdquo; — all in one connected bundle.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="#"
+                className="px-8 py-4 bg-coral hover:bg-coral-dark text-white font-bold rounded-lg text-lg transition-colors shadow-sm hover:shadow-md"
+              >
+                {/* TODO: Replace # with Gumroad product URL */}
+                Buy on Gumroad — $29
+              </a>
+              <a
+                href="#"
+                className="text-charcoal-light hover:text-sage transition-colors underline"
+              >
+                {/* TODO: Replace # with Etsy listing URL */}
+                Also available on Etsy
+              </a>
+            </div>
+          </div>
+          <div className="relative aspect-[16/9] max-w-3xl mx-auto rounded-2xl overflow-hidden border border-cream-dark shadow-md bg-cream">
+            <Image
+              src="/images/products/1099-money-system.webp"
+              alt="Abstract illustration of the 1099 Money System spreadsheet bundle"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
