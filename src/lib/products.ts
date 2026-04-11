@@ -159,7 +159,9 @@ export function getPurchasableProducts(): Product[] {
  * client components.
  */
 export function getStripePriceId(product: Product): string {
-  const priceId = process.env[product.stripePriceEnvVar];
+  // Trim defensively — env vars pasted through dashboards often pick up
+  // trailing whitespace or newlines that break API calls downstream.
+  const priceId = process.env[product.stripePriceEnvVar]?.trim();
   if (!priceId) {
     throw new Error(
       `Stripe price ID is not configured for ${product.slug}. Set ${product.stripePriceEnvVar} in .env.local or the Vercel environment.`

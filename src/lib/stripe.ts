@@ -16,7 +16,11 @@ import Stripe from "stripe";
 let _stripe: Stripe | null = null;
 
 function createStripeClient(): Stripe {
-  const key = process.env.STRIPE_SECRET_KEY;
+  // Trim whitespace/newlines — paste-through-Vercel-dashboard often adds
+  // a trailing newline, which fails HTTP header validation with:
+  //   "Invalid character in header content [Authorization]"
+  // Don't assume the user's paste was clean; sanitize at the edge.
+  const key = process.env.STRIPE_SECRET_KEY?.trim();
   if (!key) {
     throw new Error(
       "STRIPE_SECRET_KEY is not set. Add it to .env.local or the Vercel environment."
@@ -49,7 +53,7 @@ export const stripe = new Proxy({} as Stripe, {
 });
 
 export function assertStripeConfigured(): void {
-  if (!process.env.STRIPE_SECRET_KEY) {
+  if (!process.env.STRIPE_SECRET_KEY?.trim()) {
     throw new Error(
       "STRIPE_SECRET_KEY is not set. Add it to .env.local or the Vercel environment."
     );

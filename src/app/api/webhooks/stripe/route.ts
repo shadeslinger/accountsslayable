@@ -33,7 +33,9 @@ import { getProductBySlug } from "@/lib/products";
  * verification. We read it as text and hand Stripe the raw bytes.
  */
 export async function POST(req: NextRequest) {
-  const secret = process.env.STRIPE_WEBHOOK_SECRET;
+  // Trim defensively — env vars pasted through dashboards often pick up
+  // trailing newlines or whitespace that break signature comparison.
+  const secret = process.env.STRIPE_WEBHOOK_SECRET?.trim();
   if (!secret) {
     console.error(
       "[stripe webhook] STRIPE_WEBHOOK_SECRET is not set — rejecting webhook"
