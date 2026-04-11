@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import BuyButton from "@/components/BuyButton";
 import EmailSignup from "@/components/EmailSignup";
 
 const OG_IMAGE =
@@ -120,19 +121,12 @@ export default function ProductPage() {
               freelancers and 1099 workers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <BuyButton slug="1099-money-system" label="Buy now — $29" />
               <a
-                href="#"
-                className="px-8 py-4 bg-coral hover:bg-coral-dark text-white font-bold rounded-lg text-lg transition-colors shadow-sm hover:shadow-md"
-              >
-                {/* TODO: Replace # with Gumroad product URL */}
-                Buy on Gumroad — $29
-              </a>
-              <a
-                href="#"
+                href="mailto:hello@accountsslayable.com?subject=1099%20Money%20System%20question"
                 className="text-charcoal-light hover:text-sage transition-colors underline"
               >
-                {/* TODO: Replace # with Etsy listing URL */}
-                Also available on Etsy
+                Questions? Email us
               </a>
             </div>
           </div>
@@ -199,13 +193,12 @@ export default function ProductPage() {
               </p>
             </div>
           </div>
-          <a
-            href="#"
-            className="inline-block px-8 py-4 bg-coral hover:bg-coral-dark text-white font-bold rounded-lg text-lg transition-colors"
-          >
-            {/* TODO: Replace # with Gumroad product URL */}
-            Get the 1099 Money System
-          </a>
+          <div className="flex justify-center">
+            <BuyButton
+              slug="1099-money-system"
+              label="Get the 1099 Money System"
+            />
+          </div>
         </div>
       </section>
 
