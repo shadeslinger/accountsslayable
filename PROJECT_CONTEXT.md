@@ -1,10 +1,17 @@
-# Accounts Slayable — Strategic Overview v2.0
+# Accounts Slayable — Strategic Overview v2.1
 
-**Last Updated:** February 2026  
+**Last Updated:** April 2026  
 **Status:** Active — Pre-Launch  
 **Entity:** Operating as DBA under "Up & Adam" LLC  
 **Domain:** AccountsSlayable.com (secured)  
 **Owner:** Adam
+
+> **v2.1 note (April 2026):** Scope broadened from 1099-only to a 6-pillar
+> personal finance brand. The 1099 Money System remains the flagship product
+> and revenue wedge, but content and audience now span personal finance,
+> points & rewards, AI + fintech, side hustles, and money mindset. See
+> §2.5 and §6.1 for the current pillar framing. Sections 3 and earlier are
+> preserved as historical context from the v2.0 (narrow wedge) strategy.
 
 ---
 
@@ -33,7 +40,47 @@ Narrowed from broad template suite to a focused "one-problem wedge" launch. Inst
 
 ---
 
-## 3. Target Audiences (Prioritized)
+## 2.5 — April 2026 Broadening (current state)
+
+The narrow 1099-only wedge was the right shape for a v1 launch, but the
+content pillars in `CLAUDE.md` and the bot's own sense of what to write
+about were always broader (AI, automation, mindset). We're formalizing that:
+
+**Current scope — a personal finance brand with six content pillars:**
+
+1. **Personal Finance** — budgeting, debt, saving, credit basics, homebuying, subscriptions
+2. **Points & Rewards** — credit card strategy, travel hacking, cashback stacking, signup bonuses
+3. **Freelance & 1099** — quarterly taxes, income tracking, Schedule C, invoicing (the original wedge)
+4. **AI + Fintech** — AI tools for money, LLM experiments, fintech product reviews, automation workflows
+5. **Side Hustles & Biz** — starting, running small biz, "is this worth it?" math, side income
+6. **Money Mindset** — psychology, boundaries, queer-friendly planning, anti-shame finance
+
+**What stays the same:**
+- Voice: playful, comedic, queer-friendly, anti-finance-bro
+- Flagship product: The 1099 Money System ($29, one-time)
+- Anti-subscription positioning
+- Legal disclaimer requirement on all financial pages
+- "Up & Adam LLC" as parent entity
+
+**What's different:**
+- Content is no longer 1099-locked — we rotate across all six pillars
+- Credit card rewards affiliate program is now a named revenue target (previously not considered)
+- Homepage is positioned as a personal finance hub, not a 1099 landing page
+- Product roadmap expands to include rewards tracker, AI prompt library, side hustle tracker (see `OPPORTUNITIES.md`)
+
+**What this enables:**
+- Dramatically wider SEO surface area
+- Credit card affiliate revenue (single biggest latent opportunity — see `OPPORTUNITIES.md` §3)
+- Topical flexibility for the content bot — it can pick from any pillar each run, avoiding repetition
+- More authentic brand surface (Adam's actual interests span well beyond freelance taxes)
+
+Ongoing opportunity analysis lives in `OPPORTUNITIES.md` in the repo root. It
+is a living document maintained jointly by Adam and the site-builder bot,
+refreshed weekly.
+
+---
+
+## 3. Target Audiences (Prioritized — v2.0 historical, narrower framing)
 
 ### Primary: Independent Consultants & Creators (1099 Workers)
 - **Why first:** Aligned with Adam's voice and likely streaming audience. High pain (quarterly taxes, messy income tracking, no employer benefits). Willing to pay for solutions. Creates natural upsell paths.

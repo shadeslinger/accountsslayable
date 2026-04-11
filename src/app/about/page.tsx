@@ -114,20 +114,24 @@ export default function AboutPage() {
           <div className="space-y-5 text-charcoal-light text-lg leading-relaxed">
             <p>
               I run Accounts Slayable out of <span className="font-semibold text-charcoal">Up &amp; Adam LLC</span>
-              {" "}— a small, queer-run studio where I build tools for freelancers,
-              creators, and 1099 workers who want their finances to feel a little
-              less haunted. I&apos;m not a CPA. I&apos;m not a certified financial
-              planner. I&apos;m the friend at the party who got roped into
-              explaining quarterly taxes because everyone else was too embarrassed
-              to ask.
+              {" "}— a small, queer-run studio where I write about personal
+              finance for people who&apos;d rather not think about money but kind
+              of have to. Freelancers, W-2 folks, credit-card-rewards nerds,
+              side-hustlers, AI enthusiasts trying to automate their budgets —
+              this is for all of you. I&apos;m not a CPA. I&apos;m not a
+              certified financial planner. I&apos;m the friend at the party who
+              got roped into explaining quarterly taxes because everyone else
+              was too embarrassed to ask.
             </p>
             <p>
               I started this because I was tired of watching smart, funny,
-              talented people spiral every April over a shoebox of receipts they
-              meant to organize in January. The tools out there either cost $99 a
-              year and guilt-tripped you for buying a latte, or they were $7 Etsy
-              templates clearly built by someone who had never filed a Schedule C.
-              Nothing in between felt made by a person who actually{" "}
+              talented people spiral every April over a shoebox of receipts, or
+              pay $120 a year for a budgeting app they used twice, or miss out
+              on $900 of travel rewards because nobody explained the system in
+              plain English. The tools out there either cost $99 a year and
+              guilt-tripped you for buying a latte, or they were $7 Etsy
+              templates clearly built by someone who had never actually used
+              them. Nothing in between felt made by a person who{" "}
               <em>got it</em>.
             </p>
             <p>

@@ -96,8 +96,17 @@ These are intentional TODOs, not bugs:
 - Google Sheets trademark disclaimer in footer
 
 ## Content Strategy Reference
-See `PROJECT_CONTEXT.md` for full business strategy, audience targeting, pricing, competitive landscape, and launch rollout plan. Key points:
-- **Primary audience:** 1099 workers / freelancers
-- **Wedge product:** "The 1099 Money System" template bundle at $29
-- **Pricing model:** One-time purchase (anti-subscription positioning)
-- **Value anchoring:** $29 vs YNAB $99/yr, Monarch $100/yr
+See `PROJECT_CONTEXT.md` for full strategy and `OPPORTUNITIES.md` for the
+living growth/content opportunities radar.
+
+**Current scope (v2.1, April 2026):** Broad personal finance brand spanning
+6 content pillars — Personal Finance, Points & Rewards, Freelance & 1099,
+AI + Fintech, Side Hustles & Biz, Money Mindset. Every blog post should map
+to one primary pillar; cross-pillar posts are great.
+
+**Flagship product:** "The 1099 Money System" template bundle at $29
+(one-time, anti-subscription positioning, value-anchored against YNAB $99/yr,
+Monarch $100/yr). Future products are tracked in `OPPORTUNITIES.md` §3.
+
+**Legal disclaimer (required on all financial pages):** "For informational
+purposes only. Not financial, tax, or legal advice."
