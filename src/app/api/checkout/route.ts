@@ -69,9 +69,12 @@ export async function POST(req: NextRequest) {
       // allow_promotion_codes lets us run discount campaigns later without
       // changing the code — just create a coupon in Stripe and share the code.
       allow_promotion_codes: true,
-      // Collect tax automatically (Stripe Tax must be enabled in dashboard).
-      // If Stripe Tax is disabled this line is a no-op.
-      automatic_tax: { enabled: true },
+      // Stripe Tax requires a head office address + activation in
+      // dashboard.stripe.com/settings/tax before it will accept a session.
+      // Leaving this disabled until Adam has decided on tax strategy.
+      // Flip to `true` once Stripe Tax is configured to let Stripe handle
+      // sales tax across all US states automatically (~$0.50/transaction).
+      automatic_tax: { enabled: false },
       success_url: `${origin}/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/cancel`,
       metadata: {
