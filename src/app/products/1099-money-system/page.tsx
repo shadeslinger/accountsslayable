@@ -228,6 +228,29 @@ export default function ProductPage() {
         </div>
       </section>
 
+      {/* Explore the pillar */}
+      <section className="py-16 sm:py-20 bg-cream border-t border-cream-dark">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="font-heading uppercase tracking-[0.2em] text-sm text-sage-dark mb-3">
+            More in this pillar
+          </p>
+          <h2 className="font-heading font-bold text-3xl text-charcoal mb-4">
+            Freelance &amp; 1099 writing
+          </h2>
+          <p className="text-charcoal-light text-lg mb-8 max-w-xl mx-auto">
+            This product belongs to our Freelance &amp; 1099 pillar — quarterly
+            taxes, income tracking, Schedule C, invoicing, and the whole
+            self-employed toolkit.
+          </p>
+          <a
+            href="/topics/freelance-and-1099"
+            className="inline-block px-6 py-3 bg-white hover:bg-cream-dark text-charcoal font-semibold rounded-lg border border-cream-dark transition-colors"
+          >
+            Explore Freelance &amp; 1099 →
+          </a>
+        </div>
+      </section>
+
       {/* Bottom CTA */}
       <section className="py-16 sm:py-20 bg-sage/5">
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">

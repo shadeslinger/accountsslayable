@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
+import { getAllPillars } from "@/lib/pillars";
 
 export const metadata: Metadata = {
   title: "Accounts Slayable — Personal Finance, Unfiltered",
@@ -35,56 +36,13 @@ const jsonLd = {
   },
 };
 
-const pillars = [
-  {
-    tag: "01",
-    title: "Personal Finance",
-    blurb:
-      "Budgets, debt, saving, credit, homebuying — the unsexy stuff that actually moves the needle.",
-    href: "/blog",
-    accent: "sage",
-  },
-  {
-    tag: "02",
-    title: "Points & Rewards",
-    blurb:
-      "Travel hacks, cashback stacking, and the art of never paying retail for anything you didn't have to.",
-    href: "/blog",
-    accent: "coral",
-  },
-  {
-    tag: "03",
-    title: "Freelance & 1099",
-    blurb:
-      "Quarterly taxes, income chaos, and surviving Schedule C without losing your mind. (Our OG pillar.)",
-    href: "/products/1099-money-system",
-    accent: "sage",
-  },
-  {
-    tag: "04",
-    title: "AI + Fintech",
-    blurb:
-      "We test the tools so you don't have to. Some are magic. Some are nonsense. We say which.",
-    href: "/blog",
-    accent: "coral",
-  },
-  {
-    tag: "05",
-    title: "Side Hustles & Biz",
-    blurb:
-      'Side gigs, small business, and honest "is this actually worth my time?" math.',
-    href: "/blog",
-    accent: "sage",
-  },
-  {
-    tag: "06",
-    title: "Money Mindset",
-    blurb:
-      "Finance without shame, gendered defaults, or a $99/year guilt trip. Just real talk.",
-    href: "/blog",
-    accent: "coral",
-  },
-];
+const pillars = getAllPillars().map((p) => ({
+  tag: p.number,
+  title: p.name,
+  blurb: p.tagline,
+  href: `/topics/${p.slug}`,
+  accent: p.accent,
+}));
 
 const painPoints = [
   {
