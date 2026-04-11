@@ -65,12 +65,31 @@ content/
 ```
 
 ## Brand & Design
-- **Sage green:** `#87A96B` (primary — growth/money)
-- **Cream:** `#F7F5F3` (background — simplicity)
-- **Coral:** `#FF6B6B` (accent/CTAs — energy)
+- **Sage green:** `#87A96B` (primary, growth/money)
+- **Cream:** `#F7F5F3` (background, simplicity)
+- **Coral:** `#FF6B6B` (accent/CTAs, energy)
 - **Charcoal:** `#2D2D2D` (text)
 - Each color has light/dark variants defined in the `@theme` block
-- Voice: playful, comedic, approachable — not corporate. "Slay your accounts, not your sanity."
+- Tagline: "Slay your accounts, not your sanity."
+
+## Voice — read `prompts/voice-guide.md` before writing any copy
+
+Voice is the brand's moat and its single biggest defense against
+AI-aesthetic fatigue. Every piece of copy shipped on this site should pass
+the checklist in `prompts/voice-guide.md`. The short version:
+
+- **Zero "not X, it's Y" constructions.** This is the #1 LLM tell. Rewrite affirmative.
+- **Zero "here's the thing" / "real talk" / "honestly" framing.**
+- **Maximum one em dash per page of copy.** Prefer commas, colons, periods.
+- **No emojis in body copy.** Use them only where they're functionally part of a UI element (e.g., pain-point cards).
+- **No triple-adjective lists.** "Playful, comedic, approachable" is three. Pick the best two or one.
+- **No "actually" / "really" / "genuinely" / "truly" / "just" intensifiers.**
+- **Specific details beat general claims.** Real numbers, real competitor names, real tax terminology.
+- **Cut 10% after the first draft.** LLM writing is long; human writing earns length.
+
+`prompts/voice-guide.md` has the full rules, positive guidance, and a
+pre-ship checklist. Read it before writing copy, blog posts, product
+descriptions, newsletter content, or anything that ships to users.
 
 ## Known Placeholders (Not Yet Wired Up)
 These are intentional TODOs, not bugs:

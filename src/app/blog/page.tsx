@@ -60,9 +60,9 @@ export default function BlogIndex() {
         The blog
       </h1>
       <p className="text-charcoal-light text-lg mb-12 max-w-2xl">
-        Personal finance, points strategy, AI experiments, and side-hustle
-        reality checks. Written in plain English, with as little finance-bro
-        vocabulary as we can manage.
+        Writing about personal finance, credit card points, AI tools for
+        money, freelance taxes, side hustles, and the feelings part. In
+        plain English, without the finance-bro vocabulary.
       </p>
 
       {/* Pillar quick-filter */}

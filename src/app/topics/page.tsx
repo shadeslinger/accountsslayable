@@ -57,10 +57,9 @@ export default function TopicsPage() {
             Six pillars. One voice.
           </h1>
           <p className="text-lg sm:text-xl text-charcoal-light max-w-2xl mx-auto">
-            Accounts Slayable writes about personal finance the way real people
-            actually live it — across taxes, points, tools, side hustles, and
-            the feelings part. Pick whichever pillar matches the thing keeping
-            you up at night.
+            Accounts Slayable covers six sides of personal finance. Taxes,
+            points, tools, side hustles, and the feelings part. Pick whichever
+            one matches the thing keeping you up at night.
           </p>
         </div>
       </section>
@@ -127,7 +126,7 @@ export default function TopicsPage() {
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
           <EmailSignup
             heading="One email a week, all pillars"
-            subheading="We'll send the best new writing from across every pillar — points, AI, personal finance, and the occasional money hot take."
+            subheading="The best new writing from across every pillar. No spam, unsubscribe any time."
           />
         </div>
       </section>

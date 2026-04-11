@@ -30,47 +30,47 @@ const features = [
   {
     name: "Multi-Client Income Tracker",
     description:
-      "Log income from every client in one place. See who's paying, who's late, and where your money actually comes from.",
+      "Log income from every client in one place. See who's paid, who's late, and where your money is coming from.",
   },
   {
     name: "Quarterly Tax Set-Aside Calculator",
     description:
-      "Automatically calculates how much to set aside for estimated taxes based on your income. No more January panic.",
+      "Calculates how much to set aside for estimated taxes based on your year-to-date income, so April stops being a surprise.",
   },
   {
-    name: "Invoice Tracker + Overdue Alerts",
+    name: "Invoice Tracker with Overdue Alerts",
     description:
-      "Track every invoice sent, paid, and overdue. Color-coded status so nothing falls through the cracks.",
+      "Every invoice sent, paid, and overdue in one place. Color-coded status so nothing falls off the radar.",
   },
   {
-    name: "Receipt & Mileage Log",
+    name: "Receipt and Mileage Log",
     description:
-      "Dead-simple expense tracking with categories that actually match Schedule C. Mileage log included.",
+      "Dead-simple expense tracking with categories that map directly to Schedule C. Mileage log included.",
   },
   {
     name: "Q1 Cleanup Mini-Playbook",
     description:
-      "Step-by-step guide to get your finances organized at the start of each quarter. Takes 30 minutes.",
+      "A step-by-step guide for getting your finances organized at the start of each quarter. Takes about 30 minutes.",
   },
   {
     name: "AI-Assisted Setup Instructions",
     description:
-      "Clear instructions with prompts you can paste into ChatGPT to customize the templates for your specific situation.",
+      "Instructions with prompts you can paste into ChatGPT or Claude to customize the templates for your specific situation.",
   },
 ];
 
 const faqs = [
   {
     q: "Do I need to know spreadsheets?",
-    a: "Nope. If you can type a number into a cell, you're good. Everything is pre-built with instructions.",
+    a: "No. If you can type a number into a cell, you can use these. Everything is pre-built with instructions.",
   },
   {
-    q: "Will this work for my country/state?",
-    a: "The templates are designed for U.S.-based freelancers and 1099 workers. Tax rates and categories follow IRS guidelines. International users can adapt the structure but tax specifics may differ.",
+    q: "Will this work for my country or state?",
+    a: "The templates are designed for U.S.-based freelancers and 1099 workers. Tax rates and categories follow IRS guidelines. International users can adapt the structure, but the tax specifics will differ.",
   },
   {
     q: "Can I customize the templates?",
-    a: "Absolutely — they're Google Sheets, so you can modify anything. Add columns, change categories, make it yours.",
+    a: "Yes. They're Google Sheets, so you can add columns, change categories, rename things, and generally make the bundle your own.",
   },
   {
     q: "Is this financial advice?",
@@ -78,7 +78,7 @@ const faqs = [
   },
   {
     q: "What if I don't like it?",
-    a: "30-day refund for any technical issues. If the templates don't work as described, you get your money back.",
+    a: "30-day refund for any technical issue. If the templates don't work as described, you get your money back.",
   },
 ];
 
@@ -115,9 +115,9 @@ export default function ProductPage() {
               The 1099 Money System
             </h1>
             <p className="text-lg sm:text-xl text-charcoal-light max-w-2xl mx-auto mb-8">
-              Everything a freelancer needs to track income, set aside taxes,
-              manage invoices, and stop wondering &ldquo;am I even
-              profitable?&rdquo; — all in one connected bundle.
+              A six-sheet bundle that covers income tracking, quarterly tax
+              set-asides, invoices, business expenses, and receipts for
+              freelancers and 1099 workers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a

@@ -61,7 +61,7 @@ const products: Product[] = [
   {
     name: "The 1099 Money System",
     description:
-      "Everything a freelancer needs to track income, set aside taxes, manage invoices, and know if you're actually profitable. Six interlocking sheets, one afternoon of setup.",
+      "A six-sheet bundle covering income tracking, quarterly tax set-asides, invoices, expenses, and receipts for freelancers. One afternoon of setup.",
     price: "$29",
     href: "/products/1099-money-system",
     tag: "Flagship",
@@ -72,7 +72,7 @@ const products: Product[] = [
   {
     name: "Credit Card Rewards Tracker",
     description:
-      "Track signup bonuses, minimum spends, annual fee renewals, and net value per card. Turn the points game into a spreadsheet you actually enjoy opening.",
+      "A sheet for tracking signup bonuses, minimum spends, annual fee renewals, and the net value of every card in your wallet.",
     price: "$19",
     href: "#",
     tag: "Points & Rewards",
@@ -83,7 +83,7 @@ const products: Product[] = [
   {
     name: "AI Finance Prompt Library",
     description:
-      "A curated pack of prompts for using Claude, ChatGPT, and Gemini as a budget coach, tax helper, and spreadsheet assistant — without giving up your bank login.",
+      "A curated pack of prompts for using Claude, ChatGPT, and Gemini as a budget coach, tax helper, and spreadsheet assistant without handing over any bank logins.",
     price: "$9",
     href: "#",
     tag: "AI + Fintech",
@@ -94,7 +94,7 @@ const products: Product[] = [
   {
     name: "Side Hustle Income Tracker",
     description:
-      "Multi-gig income and hours-worked sheet that calculates your real effective hourly rate — so you finally know if that thing is worth doing.",
+      "A multi-gig income and hours-worked sheet that calculates your real effective hourly rate, so you know which side hustle is paying you and which one is paying you to be tired.",
     price: "$15",
     href: "#",
     tag: "Side Hustles",
@@ -122,9 +122,8 @@ export default function ShopPage() {
             Templates that do the hard part.
           </h1>
           <p className="text-lg sm:text-xl text-charcoal-light max-w-2xl mx-auto">
-            Google Sheets tools built across every pillar we cover — personal
-            finance, points, freelancing, AI, side hustles. Buy once, use
-            forever. No subscriptions. No lock-in.
+            Google Sheets templates built across every topic Accounts Slayable
+            covers. Buy once, use forever. No subscriptions, no lock-in.
           </p>
         </div>
       </section>
@@ -227,13 +226,13 @@ export default function ShopPage() {
 
             {/* "And more" tile */}
             <div className="bg-cream/40 rounded-2xl p-6 border border-dashed border-cream-dark flex flex-col justify-center items-center text-center">
-              <p className="text-charcoal font-semibold mb-2">More on the way</p>
+              <p className="text-charcoal font-semibold mb-2">More in progress</p>
               <p className="text-sm text-charcoal-light/80 mb-4">
-                Homebuying readiness sheet, travel rewards planner, and whatever
-                the next cornerstone idea is.
+                Homebuying readiness sheet, travel rewards planner, sinking
+                funds tracker, and whatever comes next.
               </p>
               <p className="text-xs text-charcoal-light/70">
-                Sign up below to get notified.
+                Sign up below to get notified as they ship.
               </p>
             </div>
           </div>

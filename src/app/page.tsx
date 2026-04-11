@@ -8,13 +8,13 @@ const HOME_OG_IMAGE =
   "/api/og?title=Slay%20your%20accounts%2C%20not%20your%20sanity&subtitle=Personal%20finance%2C%20points%20strategy%2C%20AI%20experiments%2C%20and%20side-hustle%20reality%20checks";
 
 export const metadata: Metadata = {
-  title: "Accounts Slayable — Personal Finance, Unfiltered",
+  title: "Accounts Slayable — Tools and writing for your money",
   description:
-    "Personal finance, points strategy, AI experiments, and side-hustle reality checks — for people who want their money to be boring in a good way. Tools, templates, and no-nonsense writing from one person who actually gets it.",
+    "Spreadsheet templates and plain-English writing about personal finance, credit card points, freelance taxes, side hustles, and the feelings part of money. Buy once, own forever.",
   openGraph: {
-    title: "Accounts Slayable — Personal Finance, Unfiltered",
+    title: "Accounts Slayable — Tools and writing for your money",
     description:
-      "Personal finance, points strategy, AI experiments, and side-hustle reality checks — for people who want their money to be boring in a good way.",
+      "Spreadsheet templates and plain-English writing about personal finance, credit card points, freelance taxes, and side hustles.",
     type: "website",
     url: "https://accountsslayable.com",
     images: [
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Accounts Slayable — Personal Finance, Unfiltered",
+    title: "Accounts Slayable — Tools and writing for your money",
     description:
-      "Personal finance, points strategy, AI experiments, and side-hustle reality checks — for people who want their money to be boring in a good way.",
+      "Spreadsheet templates and plain-English writing for people who want their finances to be boring in a good way.",
     images: [HOME_OG_IMAGE],
   },
 };
@@ -57,17 +57,17 @@ const painPoints = [
   {
     emoji: "😬",
     heading: "Your finances are vibes-based",
-    body: "Some months feel fine. Some months feel doomed. There's no actual data — just guessing. One good spreadsheet replaces the guessing with numbers you can argue with.",
+    body: "Some months feel fine, some feel doomed, and you can't explain why either way. A spreadsheet replaces the guessing with numbers you can argue with.",
   },
   {
     emoji: "💳",
-    heading: "You're leaving rewards on the table",
-    body: "Someone out there is flying business class on points they earned buying groceries. That could be you. It's not complicated — it's just a system nobody taught you.",
+    heading: "Rewards you're leaving on the table",
+    body: "Someone out there is flying business class on points they earned buying groceries. That someone could be you. It's a system nobody bothered to teach you.",
   },
   {
     emoji: "🤖",
-    heading: "Every new AI tool promises a revolution",
-    body: "Most of them are wrappers. Some are actually useful. We try them all so you only pay for the good ones — if you pay at all.",
+    heading: "Another AI finance tool, probably a wrapper",
+    body: "Most new AI finance apps are wrappers around ChatGPT with a fresh coat of paint. A few aren't. We try them so you only pay for the ones that earn it.",
   },
 ];
 
@@ -134,9 +134,10 @@ export default function Home() {
             <span className="text-sage">not your sanity.</span>
           </h1>
           <p className="text-lg sm:text-xl text-charcoal-light max-w-2xl mx-auto mb-10 leading-relaxed">
-            Spreadsheets, points strategy, AI experiments, and side-hustle
-            reality checks. For people who want their money to be boring in a
-            good way — and would like a funny friend along for the ride.
+            Spreadsheet templates and plain-English writing about budgets,
+            credit card points, freelance taxes, and the rest of the things
+            that make money feel bigger than it is. For people who want their
+            finances to be boring in a good way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
@@ -163,15 +164,14 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="font-heading uppercase tracking-[0.2em] text-sm text-sage-dark mb-3">
-              What we&apos;re into
+              What we cover
             </p>
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-charcoal mb-4">
               Six pillars. One voice.
             </h2>
             <p className="text-charcoal-light max-w-2xl mx-auto text-lg">
-              We write about money the way actually-interesting people at a
-              dinner party talk about it — practical, funny, a little weird, and
-              always in plain English.
+              Writing for people who want their money to run quietly in the
+              background, told in plain English.
             </p>
           </div>
 
@@ -224,7 +224,7 @@ export default function Home() {
               Sound familiar?
             </p>
             <h2 className="font-heading font-bold text-3xl sm:text-4xl text-charcoal mb-4">
-              The three things that are quietly ruining your money.
+              Three quiet ways your money gets away from you.
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -260,11 +260,11 @@ export default function Home() {
                 The 1099 Money System
               </h2>
               <p className="text-charcoal-light mb-6 leading-relaxed text-lg">
-                Six interlocking Google Sheets that give you a complete picture
-                of your freelance or 1099 money — income, taxes, invoices, and
-                expenses. Setup takes under an hour. Built because every other
-                option was either $99/year or a $7 Etsy file from someone who
-                had clearly never filed a Schedule C.
+                Six interlocking Google Sheets covering income, quarterly
+                taxes, invoices, and expenses for 1099 workers. Setup takes
+                under an hour. Built because every other option was either
+                $99 a year or a $7 Etsy file from someone who had clearly
+                never filed a Schedule C.
               </p>
               <ul className="space-y-2 mb-8">
                 {productFeatures.map((f) => (
@@ -349,18 +349,16 @@ export default function Home() {
       <section className="bg-white py-16 sm:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="font-heading uppercase tracking-[0.2em] text-sm text-coral-dark mb-3">
-            Real quick
+            One more thing
           </p>
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-charcoal mb-4 leading-tight">
-            Your budgeting app costs more per year than our whole thing costs
-            forever.
+            Your budgeting app costs more per year than this costs forever.
           </h2>
           <p className="text-charcoal-light mb-8 leading-relaxed text-lg">
-            YNAB is $99/year. Monarch is $100/year. Tiller is $79/year. The
-            1099 Money System is $29 once — and you can customize every cell
-            because you own the spreadsheet. No lock-in, no monthly guilt, no
-            &ldquo;did I actually use this?&rdquo; moment staring at your
-            subscription list.
+            YNAB is $99 a year. Monarch is $100 a year. Tiller is $79 a year.
+            The 1099 Money System is $29 once, and the spreadsheet is yours to
+            modify. No lock-in, no renewal notices, no guilt about whether you
+            got your money&rsquo;s worth this month.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
@@ -434,9 +432,7 @@ export default function Home() {
           </h2>
           <p className="text-white/70 mb-8 text-lg">
             One or two emails a week. New templates, new posts, and the
-            occasional unhinged money hot take. No spam, no guilt trips, no
-            &ldquo;you won&rsquo;t believe what this CPA does next&rdquo;
-            nonsense.
+            occasional unreasonable opinion about money. Unsubscribe any time.
           </p>
           <EmailSignup
             heading=""

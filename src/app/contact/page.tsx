@@ -29,7 +29,7 @@ const channels = [
   {
     heading: "Email",
     blurb:
-      "Best way to reach us. One human reads everything. Response time is usually a couple of business days, longer if I'm deep in a spreadsheet.",
+      "The best way to reach us. One human reads every message. Response time is usually a couple of business days.",
     link: {
       href: "mailto:hello@accountsslayable.com",
       label: "hello@accountsslayable.com",
@@ -38,25 +38,25 @@ const channels = [
   {
     heading: "Template support",
     blurb:
-      "Having trouble with a template? Check the product page FAQ first — most common questions are covered there. If you're still stuck, email us and we'll sort it out.",
+      "If you're stuck on a template, the product page FAQ covers most of the common questions. If it doesn't, send an email and we'll sort it out.",
     link: {
       href: "/products/1099-money-system",
       label: "1099 Money System FAQ →",
     },
   },
   {
-    heading: "Partnerships & press",
+    heading: "Partnerships and press",
     blurb:
-      "Working on something we might want to write about, or interested in collaborating on a template, course, or tool? Tell us the shape of the idea and we'll see if it fits.",
+      "Working on something worth writing about, or want to collaborate on a template, course, or tool? Send the shape of the idea.",
     link: {
       href: "mailto:hello@accountsslayable.com?subject=Partnership%20inquiry",
       label: "Pitch us →",
     },
   },
   {
-    heading: "Feedback & requests",
+    heading: "Feedback and requests",
     blurb:
-      "Wish we'd write about a specific topic? Think a template is missing a feature? Tell us. This kind of feedback is how the roadmap gets built.",
+      "Topic suggestions and feature requests are how the roadmap gets built. Tell us what you want us to write about or fix in a template.",
     link: {
       href: "mailto:hello@accountsslayable.com?subject=Feedback",
       label: "Send feedback →",
@@ -78,8 +78,8 @@ export default function ContactPage() {
           </h1>
           <p className="text-lg sm:text-xl text-charcoal-light max-w-2xl mx-auto">
             Questions about templates, feedback on the writing, partnerships,
-            press inquiries, or just a note to say the site didn&apos;t suck —
-            we read everything.
+            press inquiries, or a note to say the site didn&apos;t suck. Every
+            message gets read.
           </p>
         </div>
       </section>
@@ -120,10 +120,10 @@ export default function ContactPage() {
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-charcoal-light leading-relaxed">
             Accounts Slayable is run by one person (hi, Adam) under Up &amp;
-            Adam LLC. No support desk, no ticketing system, just email and a
-            commitment to actually reading it. If something&apos;s urgent, put{" "}
+            Adam LLC. There is no support desk and no ticketing system. If
+            something is urgent, put{" "}
             <span className="font-semibold text-charcoal">URGENT</span> in the
-            subject line and we&apos;ll jump it to the top of the queue.
+            subject line and it jumps to the top of the queue.
           </p>
         </div>
       </section>

@@ -21,14 +21,14 @@ const steps = [
     number: "01",
     title: "Grab the free checklist",
     description:
-      "Join the email list and get our free Slayable Money Reset checklist — 15 minutes of setup that gives you a clear baseline, no matter which pillar you care about.",
+      "Join the email list and get the Slayable Money Reset checklist. 15 minutes of setup that gives you a clear baseline, whichever topic you care about.",
     kind: "email" as const,
   },
   {
     number: "02",
-    title: "Pick your flavor of chaos",
+    title: "Pick a topic",
     description:
-      "Browse the six pillars we cover and pick whichever one sounds like your current life. You don't have to commit — you can hop between them.",
+      "Browse the six topics we cover and pick whichever one sounds most like your current life. You can hop between them. Nothing is final.",
     kind: "link" as const,
     cta: { label: "Browse topics", href: "/topics" },
   },
@@ -36,7 +36,7 @@ const steps = [
     number: "03",
     title: "Read the essentials",
     description:
-      "Each pillar has a growing library of posts. Start with the cornerstone writing for whichever topic you picked — that's usually the deepest, most useful piece.",
+      "Each topic has a growing library of posts. Start with the cornerstone writing for whichever topic you picked. That's usually the deepest piece.",
     kind: "link" as const,
     cta: { label: "Visit the blog", href: "/blog" },
   },
@@ -44,7 +44,7 @@ const steps = [
     number: "04",
     title: "Check the shop",
     description:
-      "When you're ready, browse the templates. The 1099 Money System is our flagship for freelancers; more are in the oven for the other pillars.",
+      "When you're ready, browse the templates. The 1099 Money System is the current flagship. More templates for the other topics are in progress.",
     kind: "link" as const,
     cta: { label: "Browse the shop", href: "/shop" },
   },
@@ -65,9 +65,9 @@ export default function StartHerePage() {
             New here? Pull up a chair.
           </h1>
           <p className="text-lg sm:text-xl text-charcoal-light max-w-2xl mx-auto">
-            Accounts Slayable writes about money the way real people actually
-            live it. Here&apos;s the shortest path from &ldquo;this is chaos&rdquo;
-            to &ldquo;I have a system,&rdquo; regardless of which pillar you&rsquo;re
+            Accounts Slayable writes about money the way it shows up in real
+            life. Here is the shortest path from &ldquo;this is chaos&rdquo;
+            to &ldquo;I have a system,&rdquo; whichever topic you are
             drowning in.
           </p>
         </div>
@@ -135,8 +135,8 @@ export default function StartHerePage() {
               Or skip straight to the thing you care about
             </h2>
             <p className="text-charcoal-light max-w-xl mx-auto">
-              If you already know what&apos;s keeping you up at night, jump
-              directly to that pillar.
+              If you already know what is keeping you up at night, go directly
+              to that topic.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">

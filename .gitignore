@@ -37,6 +37,13 @@ yarn-error.log*
 # cursor IDE
 .cursor/
 
+# internal strategy / planning docs — kept local in ~/services/accountsslayable-bot/state/
+# these are NOT shipped content and should not be version-controlled with the site
+BACKLOG.md
+OPPORTUNITIES.md
+TEMPLATE\ OPPORTUNITIES_*.md
+/docs/opportunities/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

@@ -37,28 +37,28 @@ const jsonLd = {
 
 const whatYouGet = [
   {
-    title: "One or two emails a week, not twelve",
-    body: "We're not going to strip-mine your inbox for engagement. You'll get the best new writing and the occasional template drop — that's it.",
+    title: "One or two emails a week",
+    body: "Not twelve. No engagement-farming. The best new writing and the occasional template drop, then out of your inbox.",
   },
   {
-    title: "Writing across all six pillars",
-    body: "Personal finance, points & rewards, freelance & 1099, AI + fintech, side hustles, and money mindset. You'll hear from all of them without needing to subscribe to six different things.",
+    title: "Writing from all six pillars",
+    body: "Personal finance, points and rewards, freelance work, AI and fintech, side hustles, money mindset. One list, all of them.",
   },
   {
-    title: "Actually useful stuff, written like a human",
-    body: "No generic tips, no SEO listicles written by a machine, no finance-bro vocabulary. Everything is written by one person who reads it out loud before shipping.",
+    title: "Useful stuff, written by a person",
+    body: "One human writes this, reads it out loud, and cuts the parts that don't earn their length. No SEO-farmed listicles.",
   },
   {
-    title: "First dibs on new templates",
-    body: "Subscribers see new products before they go public — and usually get a launch discount too.",
+    title: "First look at new templates",
+    body: "Subscribers see new products before they go public and usually get a launch discount.",
   },
 ];
 
 const whatWontHappen = [
-  "Nobody selling your email to a third party",
-  "No AI-slop daily digest filled with affiliate link farms",
-  "No $99/year paywall creeping in later",
-  "No \"you won't believe what this CPA does next\" nonsense",
+  "Your email being sold to a third party",
+  "A daily AI-slop digest with affiliate link farms",
+  "A $99/year paywall creeping in later",
+  "Subject lines that start with \"You won't believe\"",
 ];
 
 export default function NewsletterPage() {
@@ -79,10 +79,10 @@ export default function NewsletterPage() {
             One email a week. Zero guilt trips.
           </h1>
           <p className="text-lg sm:text-xl text-charcoal-light max-w-2xl mx-auto mb-10">
-            The best new writing from Accounts Slayable — across personal
-            finance, points, freelance work, AI, side hustles, and the feelings
-            part of money — delivered to your inbox. No spam, unsubscribe any
-            time.
+            The best new writing from Accounts Slayable, straight to your
+            inbox. Personal finance, credit card points, freelance taxes,
+            side hustles, and the feelings part of money. No spam.
+            Unsubscribe any time.
           </p>
           <div className="max-w-md mx-auto">
             <EmailSignup

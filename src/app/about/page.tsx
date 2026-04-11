@@ -52,34 +52,34 @@ export const metadata: Metadata = {
 
 const beliefs = [
   {
-    title: "Tools over advice",
-    body: "You don't need another blog post telling you to save more. You need a spreadsheet that makes it easy. We lead with the tool.",
+    title: "Tools before advice",
+    body: "Most people get plenty of advice. What they're short on is a working spreadsheet that shows them where their money actually goes.",
   },
   {
-    title: "Buy once, own forever",
-    body: "Your budget tracker shouldn't cost more than your streaming services. $29 one-time, yours forever, no sneaky renewal emails.",
+    title: "Buy once, keep forever",
+    body: "Your budget tracker shouldn't cost more than your streaming services. $29 one-time, no renewals, no hostage-taking your data.",
   },
   {
-    title: "Clarity over complexity",
-    body: "If a finance tool needs a 40-minute tutorial to use, it's solving the wrong problem. Ours come with a one-page setup.",
+    title: "Clarity before complexity",
+    body: "If a finance tool requires a 40-minute tutorial before you can open it, the tool is the problem. Ours come with a one-page setup.",
   },
   {
-    title: "No judgment, no defaults",
-    body: "Finance apps love to assume things about you — your household, your job, your goals. Ours don't. You tell the spreadsheet who you are.",
+    title: "Defaults are a design choice",
+    body: "Finance apps assume things about who you are and how your household works. Ours let you tell the spreadsheet who you are and what you want to track.",
   },
 ];
 
 const forYou = [
   "Freelancers, consultants, and creators who'd rather spend 10 minutes with a good spreadsheet than 10 hours with a bad one",
-  "Anyone who has ever said \"I'll figure out taxes later\" and then panicked in April",
-  "People who want the calm of a system without the ick of corporate finance software",
-  "Overthinkers who need a number in front of them before they can relax",
+  "Anyone who has said \"I'll figure out taxes later\" and then panicked in April",
+  "People who want a system without the corporate-finance-app energy",
+  "Overthinkers who need to see a number on screen before they can relax",
 ];
 
 const notForYou = [
-  "People who already love QuickBooks (bless you, keep going)",
-  "Anyone hoping I'll tell them how to pick stocks — hard no, legally and otherwise",
-  "Folks who want a subscription to hold their hand forever — no shade, just not my vibe",
+  "People who already love QuickBooks (keep going)",
+  "Anyone hoping I'll tell them how to pick stocks (I won't, legally or otherwise)",
+  "Folks who want a subscription to hold their hand forever",
 ];
 
 export default function AboutPage() {
@@ -100,9 +100,9 @@ export default function AboutPage() {
             Spreadsheets shouldn&apos;t feel like homework.
           </h1>
           <p className="text-lg sm:text-xl text-charcoal-light max-w-2xl mx-auto">
-            Accounts Slayable makes finance tools for people who&apos;d rather not
-            think about money but kind of have to. Built by one person, for a lot
-            of people in the same boat.
+            Accounts Slayable makes spreadsheet templates and writes about
+            personal finance for people who would rather not think about
+            money, and yet somehow still have to.
           </p>
         </div>
       </section>
@@ -131,33 +131,31 @@ export default function AboutPage() {
 
           <div className="space-y-5 text-charcoal-light text-lg leading-relaxed">
             <p>
-              I run Accounts Slayable out of <span className="font-semibold text-charcoal">Up &amp; Adam LLC</span>
-              {" "}— a small, queer-run studio where I write about personal
-              finance for people who&apos;d rather not think about money but kind
-              of have to. Freelancers, W-2 folks, credit-card-rewards nerds,
-              side-hustlers, AI enthusiasts trying to automate their budgets —
-              this is for all of you. I&apos;m not a CPA. I&apos;m not a
-              certified financial planner. I&apos;m the friend at the party who
-              got roped into explaining quarterly taxes because everyone else
-              was too embarrassed to ask.
+              I run Accounts Slayable out of <span className="font-semibold text-charcoal">Up &amp; Adam LLC</span>,
+              a small queer-run studio on the east coast. I write about
+              personal finance for freelancers, W-2 workers, credit-card-rewards
+              nerds, side-hustlers, and anyone trying to automate a spreadsheet
+              instead of paying monthly rent on yet another finance app. I am
+              not a CPA or a certified financial planner. I am the person at
+              the party who got cornered into explaining quarterly taxes
+              because everyone else was too embarrassed to ask.
             </p>
             <p>
-              I started this because I was tired of watching smart, funny,
-              talented people spiral every April over a shoebox of receipts, or
-              pay $120 a year for a budgeting app they used twice, or miss out
-              on $900 of travel rewards because nobody explained the system in
-              plain English. The tools out there either cost $99 a year and
-              guilt-tripped you for buying a latte, or they were $7 Etsy
-              templates clearly built by someone who had never actually used
-              them. Nothing in between felt made by a person who{" "}
-              <em>got it</em>.
+              I started this because the existing options were either $99 a
+              year with a guilt trip baked in, or $7 Etsy files clearly built
+              by someone who had never filed a Schedule C. Nothing in between
+              felt like it was made by a person who had actually used the
+              thing they were selling. Meanwhile, every smart and funny person
+              I know was losing entire weekends to a shoebox of receipts or
+              walking away from hundreds of dollars in credit card rewards
+              because nobody bothered to explain the system in plain English.
             </p>
             <p>
-              So I built what I wanted: spreadsheets that respect your time, your
-              intelligence, and your bank account. Tools that tell you what to do
-              instead of just staring at you. No subscriptions. No shame. No
-              finance-bro vocabulary. Just the good stuff, with enough
-              personality that you might actually open them on a Sunday.
+              So I built what I wanted to exist: spreadsheets that respect
+              your time and tell you what to do instead of staring at you.
+              One-time purchases. Zero finance-bro vocabulary. Enough
+              personality that you might open them on a Sunday without feeling
+              like you're being scolded by a spreadsheet.
             </p>
           </div>
         </div>

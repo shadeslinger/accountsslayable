@@ -36,18 +36,18 @@ export const PILLARS: Pillar[] = [
     number: "01",
     name: "Personal Finance",
     tagline:
-      "Budgets, debt, saving, credit, homebuying — the unsexy stuff that actually moves the needle.",
+      "Budgets, debt, saving, credit, homebuying. The part of money that does most of the work.",
     description:
-      "Foundational personal finance for people who want a real system, not another generic tip.",
+      "Foundational personal finance for people who want a real system instead of another generic tip.",
     intro:
-      "Personal finance is supposed to be boring in a good way — predictable, low-drama, something that runs in the background of your life. Most of the advice out there either patronizes you or sells you a subscription. We're going for a third option: practical, honest, and written like you're a real adult with a brain.",
+      "Personal finance is supposed to be boring in a good way. Predictable, low-drama, running quietly in the background while you get on with your life. Most of the advice out there either patronizes readers or sells them a subscription. This pillar goes a different way: practical, honest, and written like you have a brain and a calculator.",
     themes: [
-      "Building a budget you'll actually stick to (without tracking every latte)",
+      "Budgets you'll actually stick to (without logging every latte)",
       "Paying down debt without the shame spiral",
-      "Credit scores, credit reports, and what actually matters",
-      "Saving for real goals — emergencies, homes, escape plans",
-      "Negotiating subscriptions and getting out of zombie charges",
-      "The basics of investing, explained without a single Warren Buffett quote",
+      "Credit scores, credit reports, and what matters",
+      "Saving for real goals: emergencies, homes, escape plans",
+      "Negotiating subscriptions and killing zombie charges",
+      "Investing basics, explained without a Warren Buffett quote",
     ],
     tags: [
       "personal finance",
@@ -65,25 +65,25 @@ export const PILLARS: Pillar[] = [
     accent: "sage",
     relatedSlugs: ["points-and-rewards", "money-mindset"],
     emptyState:
-      "Posts in this pillar are coming soon. In the meantime, sign up below and you'll be the first to know when we start shipping them.",
+      "Writing for this pillar is in the oven. Drop your email below and you'll get the first posts as they ship.",
   },
   {
     slug: "points-and-rewards",
     number: "02",
     name: "Points & Rewards",
     tagline:
-      "Travel hacks, cashback stacking, and the art of never paying retail for anything you didn't have to.",
+      "Travel hacks, cashback stacking, and the art of not paying retail for anything you didn't have to.",
     description:
-      "Credit card strategy, travel rewards, and cashback — the points game, explained without the gatekeeping.",
+      "Credit card strategy, travel rewards, and cashback, explained without the gatekeeping.",
     intro:
-      "There's a whole subculture of people flying business class on points they earned buying groceries. It's not a scam, it's not impossible, and it's not just for finance bros with nine credit cards. It's a system — and once you understand the basics, you can squeeze meaningful value out of it without becoming a spreadsheet hermit. We'll show you the shape of the game, name the good cards, and tell you which ones are hype.",
+      "There's a whole subculture of people flying business class on points they earned buying groceries. The game isn't gatekept so much as drowning in acronyms. Learn the shape of it once and you can squeeze meaningful value out of your normal spending without becoming a spreadsheet hermit. We cover which cards pull their weight, which are tourist traps, and when to stop playing altogether.",
     themes: [
-      "Which cards are actually worth their annual fee (and which are tourist traps)",
-      "The math of signup bonuses — what's a bonus actually worth?",
+      "Which cards earn their annual fee and which ones don't",
+      "Signup bonus math: what a bonus is worth in actual dollars",
       "Travel hacking without turning it into a second job",
-      "Cashback stacking: shopping portals, card multipliers, and combo plays",
-      "Keeping track of minimum spends, annual fee timing, and downgrade paths",
-      "When NOT to chase points (and when it actively costs you money)",
+      "Cashback stacking with shopping portals and card multipliers",
+      "Minimum spends, annual fee timing, and downgrade paths",
+      "When to skip points entirely",
     ],
     tags: [
       "points",
@@ -98,24 +98,24 @@ export const PILLARS: Pillar[] = [
     accent: "coral",
     relatedSlugs: ["personal-finance", "ai-and-fintech"],
     emptyState:
-      "We're brewing our first posts for this pillar now. Join the list below and we'll ping you when the Points & Rewards cornerstone guide drops.",
+      "The first cornerstone post for this pillar is being drafted. Join the list below and we'll send it when it drops.",
   },
   {
     slug: "freelance-and-1099",
     number: "03",
     name: "Freelance & 1099",
     tagline:
-      "Quarterly taxes, income chaos, and surviving Schedule C without losing your mind.",
+      "Quarterly taxes, income tracking, and surviving Schedule C with your wits intact.",
     description:
-      "The original pillar. Everything 1099 workers, freelancers, and consultants need to run a clean money system.",
+      "Everything 1099 workers, freelancers, and consultants need to run a clean money system.",
     intro:
-      "This is where Accounts Slayable started — watching brilliant freelancers spiral every April over a shoebox of receipts and a quarterly tax bill they didn't see coming. Freelance and 1099 work is great, but it leaves you on your own for all the stuff a real employer handles: withholding, benefits, retirement, deductions, the whole parade. This pillar is the field guide we wish we'd had.",
+      "This is where Accounts Slayable started: a field guide for anyone who gets a 1099 instead of a W-2 and has to figure out the whole parade of things employers normally handle. Withholding, benefits, retirement, deductions, quarterly estimates. None of it is impossibly complex, but nobody teaches it, and the spreadsheets most freelancers use for it are held together with tape.",
     themes: [
-      "Quarterly tax set-asides that actually work (the math, not the vibes)",
+      "Quarterly tax set-asides that work (the math, not the vibes)",
       "Tracking income across clients, platforms, and payment methods",
-      "Expense categorization that matches Schedule C — not your instincts",
+      "Expense categories that match Schedule C instead of your instincts",
       "Invoice follow-up without feeling like a nag",
-      "Retirement accounts for freelancers (SEP-IRA, Solo 401k, the whole menu)",
+      "Retirement accounts for freelancers: SEP-IRA, Solo 401k, the whole menu",
       "The mental game of irregular income",
     ],
     tags: [
@@ -136,29 +136,29 @@ export const PILLARS: Pillar[] = [
       href: "/products/1099-money-system",
       name: "The 1099 Money System",
       blurb:
-        "The flagship template bundle — six interlocking Google Sheets that cover income, taxes, invoices, expenses, and receipts for 1099 workers.",
+        "The flagship template bundle. Six interlocking Google Sheets covering income, taxes, invoices, expenses, and receipts for 1099 workers.",
       price: "$29 one-time",
     },
     emptyState:
-      "New posts are on the way. If you want the template bundle that started this pillar, check out the 1099 Money System.",
+      "More posts are in progress. The template bundle that started this pillar, the 1099 Money System, is live below.",
   },
   {
     slug: "ai-and-fintech",
     number: "04",
     name: "AI + Fintech",
     tagline:
-      "We test the tools so you don't have to. Some are magic. Some are nonsense. We say which.",
+      "We try the tools so you don't have to. Some are magic. Some are wrappers. We say which.",
     description:
-      "AI tools for money, LLM experiments, fintech product reviews, and automation that isn't just a gimmick.",
+      "AI tools for money, LLM experiments, fintech product reviews, and automation worth building.",
     intro:
-      "Every other week there's a new AI-powered finance tool promising to solve everything. Most of them are wrappers. Some are genuinely useful. We try them, break them, abuse them, and then report back so you don't waste a month figuring out which is which. This pillar also covers fintech product reviews (YNAB, Monarch, Copilot Money, the works) and the kind of real automation workflows you can actually build with AI — not just prompt screenshots.",
+      "Every other week a new AI-powered finance tool launches promising to solve everything. Most are wrappers around ChatGPT with a fresh coat of paint. A few are worth paying for. This pillar is where we work out which is which, plus honest takes on the big fintech players (YNAB, Monarch, Copilot Money, the others) and the automation workflows you can build yourself with an hour and a prompt.",
     themes: [
-      "Reviews of AI-powered personal finance tools — what works, what's a wrapper",
-      "Using ChatGPT, Claude, and Gemini as your budget coach (safely, no bank login)",
-      "Fintech app deep-dives: the honest take on YNAB, Monarch, Copilot Money, etc.",
-      "Building your own finance automations (no code, no subscriptions)",
-      "AI-assisted spreadsheet work — getting LLMs to do the tedious bits",
-      "Industry takes: what's real, what's hype, what's quietly changing everything",
+      "Reviews of AI-powered finance tools, from useful to useless",
+      "Using ChatGPT, Claude, and Gemini as a budget coach (no bank login required)",
+      "Honest deep-dives on YNAB, Monarch, Copilot Money, and the rest",
+      "Finance automations you can build yourself",
+      "AI-assisted spreadsheet work for the tedious parts",
+      "Industry takes: real vs. hype",
     ],
     tags: [
       "ai",
@@ -175,25 +175,25 @@ export const PILLARS: Pillar[] = [
     accent: "coral",
     relatedSlugs: ["personal-finance", "side-hustles"],
     emptyState:
-      "This pillar's cornerstone post — \"I Tried 7 AI Tools for Personal Finance So You Don't Have To\" — is in the queue. Sign up below to get it first.",
+      "The cornerstone post for this pillar is a comparison of seven AI tools for personal finance. It's in the queue. Sign up below to get it first.",
   },
   {
     slug: "side-hustles",
     number: "05",
     name: "Side Hustles & Biz",
     tagline:
-      'Side gigs, small business, and honest "is this actually worth my time?" math.',
+      'Side gigs, small business, and honest "is this worth my time?" math.',
     description:
-      "Starting and running a side hustle or small business — with real math on whether it's actually paying you.",
+      "Side hustles and small business, with real numbers on whether they're paying you a fair rate.",
     intro:
-      "Every side hustle guide promises you'll make $3,000 a month flipping something on Etsy. Very few of them do the actual math on whether you're earning minimum wage after costs. We take the opposite stance: start with the math, then decide if it's worth it. This pillar is about side income, small business economics, and the \"is this a business or a slow bleed\" question nobody wants to answer.",
+      "Every side hustle guide promises $3,000 a month flipping something on Etsy. Almost none of them do the math on whether you're earning minimum wage after costs. This pillar runs the math first and decides second. Expect honest write-ups on side income, the economics of small businesses, and the question everyone avoids: is this a business, or a slow bleed?",
     themes: [
-      "The real profitability math on popular side hustles",
-      "Effective hourly rate — the only side hustle metric that matters",
+      "Profitability math on popular side hustles",
+      "Effective hourly rate, the only side hustle metric that matters",
       "Starting a small business without burning out",
       "Tracking income, expenses, and time across multiple gigs",
-      "When to quit a hustle that isn't working",
-      "LLC vs sole prop vs S-corp — the 2-minute version",
+      "Knowing when to quit a hustle that isn't working",
+      "LLC vs. sole prop vs. S-corp, in two minutes",
     ],
     tags: [
       "side hustle",
@@ -206,25 +206,25 @@ export const PILLARS: Pillar[] = [
     accent: "sage",
     relatedSlugs: ["freelance-and-1099", "ai-and-fintech"],
     emptyState:
-      "The first post in this pillar is a profitability calculator you can actually trust. It's in the works — join the list to get it first.",
+      "The first post in this pillar is a side hustle profitability calculator with honest math. It's in progress. Join the list to get it first.",
   },
   {
     slug: "money-mindset",
     number: "06",
     name: "Money Mindset",
     tagline:
-      "Finance without shame, gendered defaults, or a $99/year guilt trip. Just real talk.",
+      "Finance without shame, gendered defaults, or a guilt trip about your coffee.",
     description:
-      "The psychological side of money — boundaries, anxiety, habits, and the cultural baggage that makes finance feel harder than it is.",
+      "The psychological side of money: boundaries, anxiety, habits, and the cultural scripts we inherit.",
     intro:
-      "Most of the hard part of personal finance isn't math — it's psychology, shame, defaults, and inherited stories about money that were never really yours. This pillar is where we get real about the feelings part. Queer-friendly, judgment-free, and absolutely not going to tell you to visualize wealth. Just honest writing about why money is weird and what actually helps.",
+      "The hard part of personal finance isn't usually math. It's psychology, shame, and the inherited stories about money that were never yours to begin with. This pillar is where we get honest about the feelings side without slipping into self-help platitudes. Queer-friendly, judgment-free, and uninterested in telling anyone to visualize wealth.",
     themes: [
-      "Financial anxiety and what to actually do about it",
+      "Financial anxiety and what helps with it",
       "Money boundaries with clients, friends, family, and yourself",
       "The cultural scripts that make personal finance feel gatekept",
-      "Queer-friendly planning — no 'head of household' defaults, no assumptions",
+      "Queer-friendly planning with no 'head of household' defaults",
       "Building money habits that don't depend on willpower",
-      "The honest truth about lifestyle inflation, FIRE, and 'enough'",
+      "Lifestyle inflation, FIRE, and what 'enough' looks like",
     ],
     tags: [
       "mindset",
@@ -238,7 +238,7 @@ export const PILLARS: Pillar[] = [
     accent: "coral",
     relatedSlugs: ["personal-finance", "freelance-and-1099"],
     emptyState:
-      "Posts for this pillar are being drafted now. Subscribe below and you'll get them first.",
+      "Posts for this pillar are being drafted. Subscribe below to get them as they ship.",
   },
 ];
 

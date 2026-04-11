@@ -21,8 +21,8 @@ export default function NotFound() {
         This page went missing.
       </h1>
       <p className="text-charcoal-light text-lg mb-10 max-w-md mx-auto">
-        Whatever you were looking for isn&apos;t here. Maybe it was deducted.
-        Maybe it never existed. Either way — you&apos;re not in trouble.
+        Whatever you were looking for is not here. Maybe it was deducted.
+        Maybe it never existed. Either way, you are not in trouble.
       </p>
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
         <Link
