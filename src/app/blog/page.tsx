@@ -19,6 +19,9 @@ const blogJsonLd = {
   },
 };
 
+const OG_IMAGE =
+  "/api/og?title=The%20blog&subtitle=Personal%20finance%20across%20six%20pillars.%20Plain%20English.%20No%20finance-bro%20vocabulary.";
+
 export const metadata: Metadata = {
   title: "Blog",
   description:
@@ -29,6 +32,14 @@ export const metadata: Metadata = {
       "Personal finance writing across six pillars — budgets, points & rewards, freelance & 1099, AI + fintech, side hustles, and money mindset.",
     type: "website",
     url: "https://accountsslayable.com/blog",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog — Accounts Slayable",
+    description:
+      "Personal finance writing across six pillars. Plain English.",
+    images: [OG_IMAGE],
   },
 };
 

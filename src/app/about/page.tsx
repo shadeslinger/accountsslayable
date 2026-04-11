@@ -26,10 +26,28 @@ const aboutJsonLd = {
   },
 };
 
+const OG_IMAGE =
+  "/api/og?title=Meet%20the%20founder&subtitle=Hi%2C%20I%27m%20Adam.%20I%20built%20Accounts%20Slayable%20because%20spreadsheets%20shouldn%27t%20feel%20like%20homework.";
+
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The story behind Accounts Slayable — finance tools for freelancers and 1099 workers who'd rather not think about money but kind of have to.",
+    "The story behind Accounts Slayable — finance tools for people who'd rather not think about money but kind of have to.",
+  openGraph: {
+    title: "About — Accounts Slayable",
+    description:
+      "The story behind Accounts Slayable, written by the one person who runs it.",
+    type: "website",
+    url: "https://accountsslayable.com/about",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About — Accounts Slayable",
+    description:
+      "The story behind Accounts Slayable, written by the one person who runs it.",
+    images: [OG_IMAGE],
+  },
 };
 
 const beliefs = [

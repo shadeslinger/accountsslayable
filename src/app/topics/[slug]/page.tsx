@@ -23,6 +23,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pillar = getPillarBySlug(slug);
   if (!pillar) return { title: "Topic Not Found" };
 
+  const ogImage = `/api/og?title=${encodeURIComponent(
+    pillar.name
+  )}&subtitle=${encodeURIComponent(pillar.tagline)}&accent=${
+    pillar.accent
+  }&pillar=${pillar.number}`;
+
   return {
     title: pillar.name,
     description: pillar.description,
@@ -31,11 +37,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: pillar.description,
       type: "website",
       url: `https://accountsslayable.com/topics/${pillar.slug}`,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: pillar.name }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: `${pillar.name} — Accounts Slayable`,
       description: pillar.description,
+      images: [ogImage],
     },
   };
 }

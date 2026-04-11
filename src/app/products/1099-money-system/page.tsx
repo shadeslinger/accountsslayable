@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import EmailSignup from "@/components/EmailSignup";
 
+const OG_IMAGE =
+  "/api/og?title=The%201099%20Money%20System&subtitle=Six%20interlocking%20Google%20Sheets.%20%2429%20one-time.%20No%20subscription.&pillar=03";
+
 export const metadata: Metadata = {
   title: "The 1099 Money System",
   description:
@@ -11,12 +14,14 @@ export const metadata: Metadata = {
       "Everything a freelancer needs to track income, set aside taxes, manage invoices, and stop wondering if you're profitable. Google Sheets template pack — buy once, own forever.",
     type: "website",
     url: "https://accountsslayable.com/products/1099-money-system",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630 }],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "The 1099 Money System — $29 One-Time",
     description:
       "Everything a freelancer needs to track income, set aside taxes, manage invoices. Google Sheets template pack — buy once, own forever.",
+    images: [OG_IMAGE],
   },
 };
 

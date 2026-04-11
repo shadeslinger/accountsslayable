@@ -17,6 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
 
+  const ogImage = `/api/og?title=${encodeURIComponent(
+    post.title
+  )}&subtitle=${encodeURIComponent(post.description)}`;
+
   return {
     title: post.title,
     description: post.description,
@@ -27,11 +31,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       authors: ["Accounts Slayable"],
       tags: post.tags,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: [ogImage],
     },
   };
 }

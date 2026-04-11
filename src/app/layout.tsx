@@ -16,30 +16,46 @@ const openSans = Open_Sans({
   display: "swap",
 });
 
+const DEFAULT_OG_IMAGE = {
+  url: "/api/og?title=Slay%20your%20accounts%2C%20not%20your%20sanity&subtitle=Personal%20finance%2C%20points%20strategy%2C%20AI%20experiments%2C%20and%20side-hustle%20reality%20checks",
+  width: 1200,
+  height: 630,
+  alt: "Accounts Slayable — Personal finance, unfiltered",
+};
+
 export const metadata: Metadata = {
   title: {
-    default: "Accounts Slayable — Financial Tools for Freelancers",
+    default: "Accounts Slayable — Personal Finance, Unfiltered",
     template: "%s | Accounts Slayable",
   },
   description:
-    "Google Sheets templates and financial tools for freelancers, consultants, and 1099 workers. Slay your accounts, not your sanity.",
+    "Personal finance, points strategy, AI experiments, and side-hustle reality checks — for people who want their money to be boring in a good way. Templates, tools, and no-nonsense writing from one person who gets it.",
   metadataBase: new URL("https://accountsslayable.com"),
   icons: {
     icon: "/favicon.svg",
+  },
+  alternates: {
+    types: {
+      "application/rss+xml": [
+        { url: "/rss.xml", title: "Accounts Slayable — Blog" },
+      ],
+    },
   },
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "Accounts Slayable",
-    title: "Accounts Slayable — Financial Tools for Freelancers",
+    title: "Accounts Slayable — Personal Finance, Unfiltered",
     description:
-      "Google Sheets templates and financial tools for freelancers, consultants, and 1099 workers.",
+      "Personal finance, points strategy, AI experiments, and side-hustle reality checks.",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
-    card: "summary",
-    title: "Accounts Slayable — Financial Tools for Freelancers",
+    card: "summary_large_image",
+    title: "Accounts Slayable — Personal Finance, Unfiltered",
     description:
-      "Google Sheets templates and financial tools for freelancers, consultants, and 1099 workers.",
+      "Personal finance, points strategy, AI experiments, and side-hustle reality checks.",
+    images: [DEFAULT_OG_IMAGE.url],
   },
   other: {
     "theme-color": "#87A96B",

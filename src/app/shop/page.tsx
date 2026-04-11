@@ -22,6 +22,9 @@ const shopJsonLd = {
   },
 };
 
+const OG_IMAGE =
+  "/api/og?title=Templates%20that%20do%20the%20hard%20part&subtitle=Buy%20once%2C%20own%20forever.%20No%20subscriptions.%20No%20lock-in.&accent=coral";
+
 export const metadata: Metadata = {
   title: "Shop",
   description:
@@ -32,6 +35,13 @@ export const metadata: Metadata = {
       "Google Sheets templates and tools for personal finance, points & rewards, freelance income, and side hustles. One-time purchases, no subscriptions.",
     type: "website",
     url: "https://accountsslayable.com/shop",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shop — Accounts Slayable",
+    description: "Buy once, own forever. No subscriptions.",
+    images: [OG_IMAGE],
   },
 };
 

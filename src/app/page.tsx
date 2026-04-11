@@ -3,6 +3,9 @@ import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
 import { getAllPillars } from "@/lib/pillars";
 
+const HOME_OG_IMAGE =
+  "/api/og?title=Slay%20your%20accounts%2C%20not%20your%20sanity&subtitle=Personal%20finance%2C%20points%20strategy%2C%20AI%20experiments%2C%20and%20side-hustle%20reality%20checks";
+
 export const metadata: Metadata = {
   title: "Accounts Slayable — Personal Finance, Unfiltered",
   description:
@@ -13,12 +16,16 @@ export const metadata: Metadata = {
       "Personal finance, points strategy, AI experiments, and side-hustle reality checks — for people who want their money to be boring in a good way.",
     type: "website",
     url: "https://accountsslayable.com",
+    images: [
+      { url: HOME_OG_IMAGE, width: 1200, height: 630, alt: "Accounts Slayable" },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Accounts Slayable — Personal Finance, Unfiltered",
     description:
       "Personal finance, points strategy, AI experiments, and side-hustle reality checks — for people who want their money to be boring in a good way.",
+    images: [HOME_OG_IMAGE],
   },
 };
 

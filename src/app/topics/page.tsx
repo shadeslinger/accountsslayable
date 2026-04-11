@@ -3,6 +3,9 @@ import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
 import { getAllPillars, getPostsForPillar } from "@/lib/pillars";
 
+const OG_IMAGE =
+  "/api/og?title=Six%20pillars.%20One%20voice.&subtitle=Personal%20finance%2C%20points%2C%20freelance%2C%20AI%2C%20side%20hustles%2C%20and%20mindset";
+
 export const metadata: Metadata = {
   title: "Topics",
   description:
@@ -13,6 +16,14 @@ export const metadata: Metadata = {
       "Browse the six content pillars: personal finance, points & rewards, freelance & 1099, AI + fintech, side hustles, and money mindset.",
     type: "website",
     url: "https://accountsslayable.com/topics",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Topics — Accounts Slayable",
+    description:
+      "The six content pillars we cover, all in one place.",
+    images: [OG_IMAGE],
   },
 };
 
