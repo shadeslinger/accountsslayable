@@ -188,3 +188,39 @@ Seed: 1375842341 • Size: 1024x576 • Steps: 4
 ### 2026-04-11 — public/images/products/1099-money-system.webp
 Prompt: Abstract stacked grid panels floating at slight angles, each panel containing minimalist bar charts in coral and sage green, simple horizontal line dividers, and a few round gold coin shapes. Layered depth. Absolutely no text, no letters, no words, no labels, no window title bars, no software interface chrome. Background: cream with soft coral and sage abstract shapes. Centered editorial composition.
 Seed: 154635105 • Size: 1024x576 • Steps: 4
+
+### 2026-04-11 — public/images/products/credit-card-rewards-tracker.webp
+Prompt: A stylized credit card floating at a slight angle with small gold coins, star shapes, and a simple upward arrow trail beside it. Soft shadows. Absolutely no text, no letters, no numbers, no labels. Abstract sage and coral geometric shapes in the background. Centered flat illustration.
+Seed: 600400925 • Size: 1024x768 • Steps: 4
+
+### 2026-04-11 — public/images/products/ai-finance-prompt-library.webp
+Prompt: A glowing coral spark or lightning bolt next to a small stack of floating abstract panels with tiny icons representing prompts. Clean minimalist flat illustration. Absolutely no text, no letters, no numbers, no labels. Sage and cream with coral accents. Abstract background shapes.
+Seed: 705568976 • Size: 1024x768 • Steps: 4
+
+### 2026-04-11 — public/images/products/side-hustle-income-tracker.webp
+Prompt: Three stylized small icons arranged together suggesting multiple income streams: a small toolbox, a paintbrush, and a laptop. A simple upward bar chart behind them. Absolutely no text, no letters, no numbers. Sage green, cream, and coral palette. Clean centered flat illustration with abstract geometric background.
+Seed: 1535466878 • Size: 1024x768 • Steps: 4
+
+### 2026-04-11 — public/images/accents/404.webp
+Prompt: An empty, abstract landscape with a single small lost gold coin sitting alone on a cream surface, a broken curved path nearby, and a few scattered geometric shapes. A magnifying glass lying on its side next to the coin. Quiet, slightly forlorn but not sad. No text, no letters, no numbers. Sage and coral accents on cream background.
+Seed: 82885838 • Size: 1024x576 • Steps: 4
+
+### 2026-04-11 — public/images/blog/credit-card-rewards-no-bs-guide-01-tradeoff.webp
+Prompt: A minimalist scale or balance with a single gold coin on one side and a stack of small stars on the other side, showing them equal. Clean and simple. No text, no letters, no numbers, no labels. Sage green and coral on cream background with abstract shapes.
+Seed: 313305733 • Size: 1024x576 • Steps: 4
+
+### 2026-04-11 — public/images/blog/credit-card-rewards-no-bs-guide-02-lineup.webp
+Prompt: Three stylized credit cards arranged in a fanned-out layout, each a slightly different shape or color: one sage green with simple horizontal stripes, one cream with a coral circle accent, one coral with a sage stripe. Soft shadows. Clean flat illustration. No text, no letters, no numbers, no labels, no logos. Abstract cream background with subtle shapes.
+Seed: 70884128 • Size: 1024x576 • Steps: 4
+
+### 2026-04-11 — public/images/products/credit-card-rewards-tracker.webp
+Prompt: A stylized rounded rectangle shape suggesting a credit card in sage green, tilted at a slight angle, with a simple gold chip shape on it. Small gold coins and coral star shapes floating above it. An upward arrow in coral beside it. No card numbers, no raised text, no text anywhere, no letters, no numbers, no logos, no brand marks. Completely blank card face. Abstract cream background with sage and coral geometric shapes. Centered flat illustration.
+Seed: 1632457349 • Size: 1024x768 • Steps: 4
+
+### 2026-04-11 — public/images/products/ai-finance-prompt-library.webp
+Prompt: A bright coral lightning bolt shape in the center. Around it, three small floating rounded rectangle shapes in sage green with simple geometric dot patterns. A few small star shapes. Vibrant sage green (#87A96B) and coral pink (#FF6B6B) on a warm cream background. No text, no letters, no labels, no words. Playful and energetic flat illustration with abstract geometric shapes.
+Seed: 28087436 • Size: 1024x768 • Steps: 4
+
+### 2026-04-11 — public/images/products/side-hustle-income-tracker.webp
+Prompt: Three generic tools grouped together: a simple paintbrush, a wrench, and a small open box with a package inside. Behind them, a simple upward bar chart in coral. Absolutely no logos, no brand marks, no computers, no laptops, no phones, no Apple logo, no text, no letters, no numbers. Sage green and coral on cream background with abstract geometric shapes. Clean centered flat illustration.
+Seed: 1776174877 • Size: 1024x768 • Steps: 4

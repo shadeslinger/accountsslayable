@@ -6,17 +6,19 @@ interface PillarImageProps {
   slug: string;
   alt: string;
   /** Visual size slot. Controls wrapper className, not intrinsic image size. */
-  variant?: "hero" | "card" | "thumb";
+  variant?: "hero" | "card" | "tile" | "thumb";
   priority?: boolean;
 }
 
 const variantClasses: Record<NonNullable<PillarImageProps["variant"]>, string> =
   {
-    // Large, used on the pillar detail hero
+    // Large, used on the pillar detail hero (right side)
     hero: "relative w-full max-w-md aspect-square rounded-2xl overflow-hidden bg-cream border border-cream-dark shadow-sm",
-    // Medium, used as a card thumbnail on /topics
+    // Square, used as a card thumbnail on /topics index (full card width)
     card: "relative w-full aspect-square rounded-xl overflow-hidden bg-cream/60 border border-cream-dark mb-5",
-    // Small, used on the homepage pillar grid (icon-style)
+    // Landscape 4:3, used on the homepage pillar grid — shorter than square so cards stay compact
+    tile: "relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-cream/60 border border-cream-dark mb-4",
+    // Small, used as an icon-style thumb if space is tight
     thumb:
       "relative w-16 h-16 rounded-xl overflow-hidden bg-cream/60 border border-cream-dark mb-4 flex-shrink-0",
   };
@@ -62,7 +64,9 @@ export default function PillarImage({
             ? "(max-width: 768px) 100vw, 448px"
             : variant === "card"
               ? "(max-width: 768px) 100vw, 400px"
-              : "64px"
+              : variant === "tile"
+                ? "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
+                : "64px"
         }
         className="object-cover"
       />

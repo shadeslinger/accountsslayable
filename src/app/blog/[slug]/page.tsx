@@ -4,6 +4,11 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllSlugs, getPostBySlug } from "@/lib/blog";
 import BlogHero from "@/components/BlogHero";
 import EmailSignup from "@/components/EmailSignup";
+import InlinePostImage from "@/components/InlinePostImage";
+
+const mdxComponents = {
+  InlinePostImage,
+};
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -103,7 +108,7 @@ export default async function BlogPostPage({ params }: Props) {
       </header>
 
       <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-charcoal prose-p:text-charcoal-light prose-a:text-sage prose-a:no-underline hover:prose-a:underline prose-strong:text-charcoal">
-        <MDXRemote source={post.content} />
+        <MDXRemote source={post.content} components={mdxComponents} />
       </div>
 
       <div className="mt-16">

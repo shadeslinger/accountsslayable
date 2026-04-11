@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
 
@@ -52,6 +53,7 @@ interface Product {
   href: string;
   tag: string;
   pillarSlug?: string;
+  image: string;
   status: "available" | "coming-soon";
 }
 
@@ -64,6 +66,7 @@ const products: Product[] = [
     href: "/products/1099-money-system",
     tag: "Flagship",
     pillarSlug: "freelance-and-1099",
+    image: "/images/products/1099-money-system.webp",
     status: "available",
   },
   {
@@ -74,6 +77,7 @@ const products: Product[] = [
     href: "#",
     tag: "Points & Rewards",
     pillarSlug: "points-and-rewards",
+    image: "/images/products/credit-card-rewards-tracker.webp",
     status: "coming-soon",
   },
   {
@@ -84,6 +88,7 @@ const products: Product[] = [
     href: "#",
     tag: "AI + Fintech",
     pillarSlug: "ai-and-fintech",
+    image: "/images/products/ai-finance-prompt-library.webp",
     status: "coming-soon",
   },
   {
@@ -94,6 +99,7 @@ const products: Product[] = [
     href: "#",
     tag: "Side Hustles",
     pillarSlug: "side-hustles",
+    image: "/images/products/side-hustle-income-tracker.webp",
     status: "coming-soon",
   },
 ];
@@ -131,6 +137,21 @@ export default function ShopPage() {
               const isAvailable = product.status === "available";
               const cardInner = (
                 <>
+                  <div
+                    className={`relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-cream-dark mb-5 ${
+                      isAvailable ? "bg-cream" : "bg-cream/60"
+                    }`}
+                  >
+                    <Image
+                      src={product.image}
+                      alt={`${product.name} illustration`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 360px"
+                      className={`object-cover transition-all ${
+                        isAvailable ? "" : "opacity-80 saturate-75"
+                      }`}
+                    />
+                  </div>
                   <div className="flex items-start justify-between mb-4">
                     <span
                       className={`inline-block text-xs font-semibold uppercase tracking-wide px-3 py-1 rounded-full ${

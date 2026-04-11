@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
+import PillarImage from "@/components/PillarImage";
 import { getAllPillars } from "@/lib/pillars";
 
 const HOME_OG_IMAGE =
@@ -44,6 +45,7 @@ const jsonLd = {
 };
 
 const pillars = getAllPillars().map((p) => ({
+  slug: p.slug,
   tag: p.number,
   title: p.name,
   blurb: p.tagline,
@@ -87,8 +89,42 @@ export default function Home() {
       />
 
       {/* ─── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="bg-gradient-to-b from-sage/10 via-cream to-cream py-20 sm:py-28">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-to-b from-sage/10 via-cream to-cream py-20 sm:py-28 overflow-hidden">
+        {/* Decorative blobs — positioned absolutely, hidden on tiny screens */}
+        <svg
+          aria-hidden="true"
+          className="hidden sm:block absolute -top-16 -left-16 w-80 h-80 text-sage/15 pointer-events-none"
+          viewBox="0 0 200 200"
+          fill="currentColor"
+        >
+          <path d="M45.6,-60.5C58.3,-52.3,67.2,-37.6,71.8,-21.5C76.4,-5.4,76.6,12,70.6,27.2C64.6,42.4,52.4,55.5,37.7,63.5C23,71.6,5.7,74.5,-10.9,71.7C-27.5,68.9,-43.4,60.4,-55.4,47.5C-67.5,34.5,-75.7,17.3,-76.9,-0.7C-78.1,-18.7,-72.4,-37.3,-60.5,-46.5C-48.6,-55.7,-30.6,-55.3,-14.9,-52.9C0.7,-50.5,14,-46.1,45.6,-60.5Z" transform="translate(100 100)" />
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="hidden sm:block absolute top-12 -right-20 w-72 h-72 text-coral/10 pointer-events-none"
+          viewBox="0 0 200 200"
+          fill="currentColor"
+        >
+          <path d="M52.9,-63.7C65.6,-52,70.5,-32.7,71.6,-14.3C72.7,4.1,70,21.6,61.5,36.1C53,50.6,38.7,62.1,22.4,68.6C6.2,75.1,-12,76.6,-28.1,71.1C-44.1,65.6,-58,53.1,-65.8,37.8C-73.7,22.5,-75.5,4.4,-71.6,-11.8C-67.6,-28,-57.8,-42.3,-44.7,-54.4C-31.6,-66.5,-15.8,-76.4,1.4,-78.1C18.6,-79.8,40.2,-75.4,52.9,-63.7Z" transform="translate(100 100)" />
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="hidden md:block absolute bottom-8 left-1/4 w-24 h-24 text-coral/20 pointer-events-none"
+          viewBox="0 0 100 100"
+          fill="currentColor"
+        >
+          <circle cx="50" cy="50" r="50" />
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="hidden md:block absolute top-1/3 right-1/4 w-16 h-16 text-sage/30 pointer-events-none"
+          viewBox="0 0 100 100"
+          fill="currentColor"
+        >
+          <circle cx="50" cy="50" r="50" />
+        </svg>
+
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-4 py-1.5 bg-sage/10 text-sage-dark text-sm font-semibold rounded-full mb-6 tracking-[0.15em] uppercase">
             Personal finance, unfiltered
           </span>
@@ -146,6 +182,11 @@ export default function Home() {
                 href={pillar.href}
                 className="group relative bg-cream rounded-2xl p-6 border border-cream-dark hover:border-sage/40 hover:shadow-md transition-all"
               >
+                <PillarImage
+                  slug={pillar.slug}
+                  alt={`${pillar.title} illustration`}
+                  variant="tile"
+                />
                 <div className="flex items-start justify-between mb-4">
                   <span
                     className={`font-heading font-bold text-xs tracking-wider ${
