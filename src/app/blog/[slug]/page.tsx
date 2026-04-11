@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllSlugs, getPostBySlug } from "@/lib/blog";
+import BlogHero from "@/components/BlogHero";
 import EmailSignup from "@/components/EmailSignup";
 
 interface Props {
@@ -77,6 +78,7 @@ export default async function BlogPostPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <BlogHero slug={post.slug} title={post.title} priority />
         <header className="mb-10">
         <div className="flex flex-wrap gap-2 mb-4">
           {post.tags.map((tag) => (

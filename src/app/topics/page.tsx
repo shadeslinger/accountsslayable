@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailSignup from "@/components/EmailSignup";
+import PillarImage from "@/components/PillarImage";
 import { getAllPillars, getPostsForPillar } from "@/lib/pillars";
 
 const OG_IMAGE =
@@ -76,6 +77,11 @@ export default function TopicsPage() {
                   href={`/topics/${pillar.slug}`}
                   className="group relative bg-white rounded-2xl p-8 border border-cream-dark hover:border-sage/40 hover:shadow-md transition-all"
                 >
+                  <PillarImage
+                    slug={pillar.slug}
+                    alt={`${pillar.name} illustration`}
+                    variant="card"
+                  />
                   <div className="flex items-start justify-between mb-5">
                     <span
                       className={`font-heading font-bold text-xs tracking-wider ${

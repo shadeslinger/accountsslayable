@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src/",
-    "test:kit": "node scripts/test-kit-api.mjs"
+    "test:kit": "node scripts/test-kit-api.mjs",
+    "gen-image": "node scripts/generate-image.mjs"
   },
   "keywords": [],
   "author": "",

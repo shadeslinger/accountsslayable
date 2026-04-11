@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import EmailSignup from "@/components/EmailSignup";
 import BlogPostCard from "@/components/BlogPostCard";
+import PillarImage from "@/components/PillarImage";
 import {
   getAllPillars,
   getPillarBySlug,
@@ -95,26 +96,36 @@ export default async function PillarPage({ params }: Props) {
 
       {/* Hero */}
       <section className={`bg-gradient-to-b ${accentClasses.heroBg} py-16 sm:py-24`}>
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-3 mb-6">
-            <span
-              className={`inline-flex items-center justify-center w-12 h-12 rounded-full font-heading font-bold text-lg ${accentClasses.numberBg}`}
-              aria-hidden="true"
-            >
-              {pillar.number}
-            </span>
-            <span
-              className={`font-heading uppercase tracking-[0.2em] text-sm ${accentClasses.eyebrow}`}
-            >
-              Topic {pillar.number} of 06
-            </span>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-10 items-center">
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <span
+                  className={`inline-flex items-center justify-center w-12 h-12 rounded-full font-heading font-bold text-lg ${accentClasses.numberBg}`}
+                  aria-hidden="true"
+                >
+                  {pillar.number}
+                </span>
+                <span
+                  className={`font-heading uppercase tracking-[0.2em] text-sm ${accentClasses.eyebrow}`}
+                >
+                  Topic {pillar.number} of 06
+                </span>
+              </div>
+              <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-charcoal mb-6 leading-[1.1]">
+                {pillar.name}
+              </h1>
+              <p className="text-lg sm:text-xl text-charcoal-light leading-relaxed max-w-2xl">
+                {pillar.tagline}
+              </p>
+            </div>
+            <PillarImage
+              slug={pillar.slug}
+              alt={`${pillar.name} illustration`}
+              variant="hero"
+              priority
+            />
           </div>
-          <h1 className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-charcoal mb-6 leading-[1.1]">
-            {pillar.name}
-          </h1>
-          <p className="text-lg sm:text-xl text-charcoal-light leading-relaxed">
-            {pillar.tagline}
-          </p>
         </div>
       </section>
 
