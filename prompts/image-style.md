@@ -232,3 +232,7 @@ Seed: 1296425789 • Size: 1024x576 • Steps: 4
 ### 2026-04-12 — public/images/blog/side-hustle-math-is-it-worth-it.webp
 Prompt: Blog post hero illustration about evaluating whether a side hustle is worth the time investment. Central subject: a simple balance scale with a small stack of gold coins on one side and a small clock face on the other side, suggesting the tradeoff between time and money. A subtle upward bar chart behind it. Mood: practical and curious. Background: soft cream with abstract geometric accents in sage green and coral. No human faces, no text, no letters, no logos, no realistic photography.
 Seed: 450266923 • Size: 1024x576 • Steps: 4
+
+### 2026-04-12 — public/images/blog/free-budgeting-tools-2026.webp
+Prompt: Blog post hero illustration about free budgeting tools and spending less money. Central subject: a stylized phone screen displaying an abstract minimal budget chart with small bar graphs in sage green and coral, with a few gold coins beside it. Mood: calm and practical. Background: soft cream with abstract geometric accents in sage green and coral. No human faces, no text, no letters, no logos, no realistic photography.
+Seed: 601662252 • Size: 1024x576 • Steps: 4
