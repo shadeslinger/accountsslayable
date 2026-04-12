@@ -224,3 +224,7 @@ Seed: 28087436 • Size: 1024x768 • Steps: 4
 ### 2026-04-11 — public/images/products/side-hustle-income-tracker.webp
 Prompt: Three generic tools grouped together: a simple paintbrush, a wrench, and a small open box with a package inside. Behind them, a simple upward bar chart in coral. Absolutely no logos, no brand marks, no computers, no laptops, no phones, no Apple logo, no text, no letters, no numbers. Sage green and coral on cream background with abstract geometric shapes. Clean centered flat illustration.
 Seed: 1776174877 • Size: 1024x768 • Steps: 4
+
+### 2026-04-12 — public/images/blog/ai-budget-coach-guide.webp
+Prompt: Blog post hero illustration about using AI chatbots as a personal finance coach. Central subject: a stylized phone or laptop screen displaying an abstract chat interface with a small bar chart and a coral lightning bolt spark above it, suggesting AI assistance. A few small coin shapes nearby. Mood: curious and practical. Background: soft cream with abstract geometric accents in sage green and coral. No human faces, no text, no letters, no logos, no realistic photography.
+Seed: 1296425789 • Size: 1024x576 • Steps: 4
