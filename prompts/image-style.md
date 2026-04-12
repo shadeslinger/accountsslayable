@@ -228,3 +228,7 @@ Seed: 1776174877 • Size: 1024x768 • Steps: 4
 ### 2026-04-12 — public/images/blog/ai-budget-coach-guide.webp
 Prompt: Blog post hero illustration about using AI chatbots as a personal finance coach. Central subject: a stylized phone or laptop screen displaying an abstract chat interface with a small bar chart and a coral lightning bolt spark above it, suggesting AI assistance. A few small coin shapes nearby. Mood: curious and practical. Background: soft cream with abstract geometric accents in sage green and coral. No human faces, no text, no letters, no logos, no realistic photography.
 Seed: 1296425789 • Size: 1024x576 • Steps: 4
+
+### 2026-04-12 — public/images/blog/side-hustle-math-is-it-worth-it.webp
+Prompt: Blog post hero illustration about evaluating whether a side hustle is worth the time investment. Central subject: a simple balance scale with a small stack of gold coins on one side and a small clock face on the other side, suggesting the tradeoff between time and money. A subtle upward bar chart behind it. Mood: practical and curious. Background: soft cream with abstract geometric accents in sage green and coral. No human faces, no text, no letters, no logos, no realistic photography.
+Seed: 450266923 • Size: 1024x576 • Steps: 4
