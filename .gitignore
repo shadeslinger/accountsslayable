@@ -47,3 +47,6 @@ TEMPLATE\ OPPORTUNITIES_*.md
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local workspace state from the bot runner
+.workspace-state/

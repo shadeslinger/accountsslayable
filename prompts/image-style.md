@@ -236,3 +236,7 @@ Seed: 450266923 • Size: 1024x576 • Steps: 4
 ### 2026-04-12 — public/images/blog/free-budgeting-tools-2026.webp
 Prompt: Blog post hero illustration about free budgeting tools and spending less money. Central subject: a stylized phone screen displaying an abstract minimal budget chart with small bar graphs in sage green and coral, with a few gold coins beside it. Mood: calm and practical. Background: soft cream with abstract geometric accents in sage green and coral. No human faces, no text, no letters, no logos, no realistic photography.
 Seed: 601662252 • Size: 1024x576 • Steps: 4
+
+### 2026-04-13 — public/images/blog/quarterly-taxes-freelancer-formula.webp
+Prompt: Blog post hero illustration about calculating quarterly estimated taxes for freelancers and 1099 contractors. Central subject: a clean calendar page showing a due date, next to a clipboard with abstract horizontal lines suggesting a form, with a few stylized gold coins and a simple coral upward arrow beside it. Mood: practical and calm. Background: soft cream with abstract geometric accents in sage green and coral. No human faces, no text, no letters, no logos, no numbers on the calendar, no realistic photography.
+Seed: 1916709325 • Size: 1024x576 • Steps: 4
